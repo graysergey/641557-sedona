@@ -8,20 +8,22 @@
   <body class="page-body">
     <header class="page-header">
       <nav class="page-header__nav">
-        <a class="page-header__logo">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Логотип сайта">
-        </a>
         <ul class="page-hedaer__list site-list">
-          <li class="site-list__item site-list--active"><a>Главная</a></li>
+          <li class="site-list__item site-list_item--active"><a>Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фото и Видео</a></li>
           <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
           <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a></li>
         </ul>
-        <button class="page-header__button-menu page-header__button-menu--absolut" type="button">Открить список меню</button>
-        <button class="page-header__button-close page-header__button-close--absolut" type="button">Закрыть список меню</button>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img src="http://placehold.it/150x100" width="102" height="83" alt="Логотип сайта">
+          </a>
+          <button class="page-header__button-menu" type="button">Открить список меню</button>
+          <button class="page-header__button-close page-header__button-close--absolut" type="button">Закрыть список меню</button>
+        </div>
       </nav>
       <section class="greeting-banner">
-        <img class="greeting-banner__item-text" src="http://placehold.it/150x100" alt="Добро пожаловать в город Седона!"><!--Корректно вставить приветственные картинки с помошью img? И использование данного блока в main? :)-->
+        <img class="greeting-banner__item-text" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта" alt="Добро пожаловать в город Седона!">
       </section>
     </header>
 
@@ -31,53 +33,47 @@
           <h1 class="title-wripper__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
           <h2 class="title-wripper__subtitle">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</h2>
         </div>
-        <ol class="advantages-list"><!--Получается по БЕМ надо задавать классы каждому тегу который нам надо стилизовать? Что бы он не зависел от body и не унаследовал ничего от туда? всем"p" нужно задать классы?-->
+        <ol class="advantages-list">
           <li class="advantages-list__item advantages-list__item--blu-background">
-            <h3 class="advantages-list__item--like-h1">Настоящий городок</h3>
-            <p>- №1 -</p>
-            <p>Седона не аттракцион для туристов, тамтечет своя жизнь</p>
-            <img src="http://placehold.it/150x100" width="" height="" alt="городок">
+            <h3 class="advantages-list__like-h1">Настоящий городок</h3>
+            <p class="advantages-list__number">- №1 -</p>
+            <p class="advantages-list__content">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="advantages-list__image" src="http://placehold.it/520x260" width="520" height="260" alt="городок">
           </li>
           <li class="advantages-list__item advantages-list__item--blu-background">
-            <h3 class="advantages-list__item--like-h1">Там есть мост дьявала</h3>
-            <p>- №2 -</p>
-            <p>Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
-            <img src="http://placehold.it/150x100" width="" height="" alt="городок">
+            <h3 class="advantages-list__like-h1">Там есть мост дьявала</h3>
+            <p class="advantages-list__number">- №2 -</p>
+            <p class="advantages-list__content">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
+            <img class="advantages-list__image" src="http://placehold.it/520x260" width="520" height="260" alt="городок">
           </li>
           <li class="advantages-list__item">
-            <h3 class="advantages-list__item--like-h1">Небольшая прощадь</h3>
-            <p>- №3 -</p>
-            <p>Все интерестные места находятся очень близко</p>
+            <h3 class="advantages-list__like-h1">Небольшая прощадь</h3>
+            <p class="advantages-list__number">- №3 -</p>
+            <p class="advantages-list__content">Все интерестные места находятся очень близко</p>
           </li>
           <li class="advantages-list__item">
-            <h3 class="advantages-list__item--like-h1">Красивая дорога</h3>
-            <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="advantages-list__like-h1">Красивая дорога</h3>
+            <p class="advantages-list__number">- №4 -</p>
+            <p class="advantages-list__content">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-list__item">
-            <h3 class="advantages-list__item--like-h1">Мало туристов</h3>
-            <p>- №5 -</p>
-            <p>Большинство идет в Гранд Каньон и толпится там</p>
+            <h3 class="advantages-list__like-h1">Мало туристов</h3>
+            <p class="advantages-list__number">- №5 -</p>
+            <p class="advantages-list__content">Большинство идет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-list__item">
+          <li class="advantages-list__item advantages-list__item--order">
             <ul class="more-advantages">
               <li class="more-advantages__item more-advantages__item--image-hous">
-                <h3 class="more-advantages__item--like-h1">Жилье</h3>
-                <p>
-                  Рекомендуем пожить в настоящем мотеле, все как в кино!
-                </p>
+                <h3 class="more-advantages__like-h1">Жилье</h3>
+                <p class="more-advantages__content">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="more-advantages__item more-advantages__item--image-souvenirs">
-                <h3 class="more-advantages__item--like-h1">Сувениры</h3>
-                <p>
-                  Не только китайского, но и местного производства!
-                </p>
+                <h3 class="more-advantages__like-h1">Сувениры</h3>
+                <p class="more-advantages__content">Не только китайского, но и местного производства!</p>
               </li>
               <li class="more-advantages__item more-advantages__item--image-food">
-                <h3 class="more-advantages__item--like-h1">Еда</h3>
-                <p>
-                  Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-                </p>
+                <h3 class="more-advantages__like-h1">Еда</h3>
+                <p class="more-advantages__content">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
@@ -85,26 +81,27 @@
       </section>
       <section class="form-ofer">
         <h2 class="visually-hidden">Форма поиска гостинницы в городе Седона</h2>
-        <p class="form-ofer__item--like-h1">Заинтерисовались?</p>
-        <p class="form-ofer__item--align-center">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p><!--Стилизовать по тегу <center> плохо?-->
-        <a class="form-ofer__button" href="#" aria-label="Перейти на страницу с поиском гостинниц">Найти гостинницу</a>
+        <p class="form-ofer__like-h1">Заинтерисовались?</p>
+        <p class="form-ofer__content">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        <a class="form-ofer__button button" href="#" aria-label="Перейти на страницу с поиском гостинниц">Найти гостинницу</a>
       </section>
-      <img class="map-image" src="http://placehold.it/150x100" width="" height="" alt="Город Седона на карте">
+      <img class="map-image" src="http://placehold.it/150x100" width="320" height="350" alt="Город Седона на карте">
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__item--like-h1">#Vistisedona</p>
+      <p class="page-footer__like-h1">#Vistisedona</p>
       <section class="socials">
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <ul class="socials-list">
-          <li class="socials-list__item"><a href="#" aria-label="Перейти в Твиттер">Твиттер</a></li>
-          <li class="socials-list__item"><a href="#" aria-label="Перейти в Фейсбук">Фейсбук</a></li>
-          <li class="socials-list__item"><a href="#" aria-label="Перейти в Ютуб">Ютуб</a></li>
+        <ul class="socials__list">
+          <li class="socials__item"><a href="#" aria-label="Перейти в Твиттер">Твиттер</a></li>
+          <li class="socials__item"><a href="#" aria-label="Перейти в Фейсбук">Фейсбук</a></li>
+          <li class="socials__item"><a href="#" aria-label="Перейти в Ютуб">Ютуб</a></li>
         </ul>
+        <!--Могу ли я таким образом оформить кнопки? Задав при стилизации для ссылки font-size: 0 (что бы скрыть текст) ? Или все же ложить в span с классом visually hidden, как ты говорила-->
       </section>
       <div class="wrapper-copyright">
-        <p class="wrapper-copyright__item--html-academy">Разработано</p>
-        <a class="wrapper-copyright__item--academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
+        <p class="wrapper-copyright__text">Разработано</p>
+        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
       </div>
     </footer>
   </body>
