@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <ul class="page-hedaer__list site-list">
+          <li class="site-list__item site-list_item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и Видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a></li>
+        </ul>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
+          </a>
+          <button class="page-header__button-menu" type="button">Открить список меню</button>
+          <button class="page-header__button-close page-header__button-close--absolut" type="button">Закрыть список меню</button>
+        </div>
+      </nav>
+      <section class="greeting-banner">
+        <img class="greeting-banner__item-text" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта" alt="Добро пожаловать в город Седона!">
+      </section>
+    </header>
+
+    <main class="page-main">
+      <div class="title-wripper">
+         <h1 class="title-wripper__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2 class="title-wripper__subtitle">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</h2>
+      </div>
+      <ul class="photo-list">
+        <li class="photo-list__item">
+          <div class="photo-list__wripper-center">
+            <img src="http://placehold.it/280x280" width="280" height="280" alt="">
+            <p class="photo-list__title">Неродные просторы</p>
+            <p class="photo-list__autor">Автор фото: Борис</p>
+            <p class="photo-list__wripper-like">
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"></button>
+              <span>1350</span>
+            </p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="photo-list__wripper">
+            <img src="http://placehold.it/280x280" width="280" height="280" alt="">
+            <p class="photo-list__title">Местная растительность</p>
+            <p class="photo-list__autor">Автор фото: Сергей</p>
+            <p class="photo-list__wripper-like">
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"></button>
+              <span>143</span>
+            </p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="photo-list__wripper">
+            <img src="http://placehold.it/280x280" width="280" height="280" alt="">
+            <p class="photo-list__title">Дорога на север</p>
+            <p class="photo-list__autor">Автор фото: Петр</p>
+            <p class="photo-list__wripper-like">
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"></button>
+              <span>96</span>
+            </p>
+          </div>
+        </li>
+        <li class="photo-list__item">
+          <div class="photo-list__wripper">
+            <img src="http://placehold.it/280x280" width="280" height="280" alt="">
+            <p class="photo-list__title">Мост дьявола</p>
+            <p class="photo-list__autor">Автор фото: Антон</p>
+            <p class="photo-list__wripper-like">
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"></button>
+              <span>254</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <section class="form-ofer">
+        <h2 class="visually-hidden">Видео нашего городка - Седона</h2>
+        <p class="form-ofer__like-h1">Все еще сомневаетесь?</p>
+        <p class="form-ofer__content">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="video" src="#"></video> <!--Не знаю как быть с видео :)-->
+        <div class="video-controls">
+          <div class="video-controls__range-box">
+            <input class="video-controls__range" type="range">
+          </div>
+          <div class="video-controls">
+            <button class="video-controls__replay" type="button" aria-label="Начать просмотр сначала"></button>
+            <button class="video-controls__cc" type="button" aria-label="cc"></button>
+            <button class="video-controls__full" type="button" aria-label="Развернуть видео на весь экран"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__like-h1">#Vistisedona</p>
+      <section class="socials">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="socials__list">
+          <li class="socials__item"><a href="#" aria-label="Перейти в Твиттер">Твиттер</a></li>
+          <li class="socials__item"><a href="#" aria-label="Перейти в Фейсбук">Фейсбук</a></li>
+          <li class="socials__item"><a href="#" aria-label="Перейти в Ютуб">Ютуб</a></li>
+        </ul>
+      </section>
+      <div class="wrapper-copyright">
+        <p class="wrapper-copyright__text">Разработано</p>
+        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
+      </div>
+    </footer>
+  </body>
+</html>
