@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <ul class="page-header__list site-list">
+          <li class="site-list__item"><a href="form.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и Видео</a></li>
+          <li class="site-list__item site-list__item--active"><a>Форма отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a></li>
+        </ul>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
+          </a>
+          <button class="page-header__button-menu" type="button">Открить список меню</button>
+          <button class="page-header__button-close page-header__button-close--absolut" type="button">Закрыть список меню</button>
+        </div>
+      </nav>
+      <section class="greeting-banner">
+        <img class="greeting-banner__item-text" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта" alt="Добро пожаловать в город Седона!">
+      </section>
+    </header>
 
+    <main class="page-main">
+      <div class="title-wripper">
+         <p class="title-wripper__title">Оставьте свой отзыв</p>
+        <h1 class="title-wripper__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h1>
+      </div>
+
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+
+        <fieldset class="filters-form__section">
+          <legend class="filters-form__title">Представьтесь:</legend>
+          <div class="filters-form__wrapper">
+            <p>
+              <label class="filters-form__title-label" for="username">Имя*:</label>
+              <input class="filters-form__title-input" type="text" name="username" value="Петр" id="username">
+            </p>
+            <p>
+              <label class="filters-form__title-label" for="surname">Фамилия*:</label>
+              <input class="filters-form__title-input" type="text" name="surname" value="Петр" id="surname">
+            </p>
+            <p>
+              <label class="filters-form__title-label" for="patronymic">Отчество:</label>
+              <input class="filters-form__title-input" type="text" name="patronymic" value="Петр" id="patronymic">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-form__section">
+          <legend class="filters-form__title">Контактная информация:</legend>
+          <div class="filters-form__wrapper">
+            <p>
+              <label class="filters-form__title-label" for="telephone">Контактный телефон*:</label>
+              <input class="filters-form__title-input" type="text" name="telephone" value="Введите телефон" id="telephone">
+            </p>
+            <p>
+              <label class="filters-form__title-label" for="email">Электронная почта*:</label>
+              <input class="filters-form__title-input" type="text" name="email" value="Введите e-mail" id="email">
+            </p>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-form__section">
+          <legend class="filters-form__title">Ваше общее впечатление:</legend>
+          <div class="filters-form__wrapper">
+            <input class="visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
+            <label class="filters-form__choose-text" for="positive">Скорее положительное</label>
+            <input class="visually-hidden" type="radio" name="impression" value="negative" id="negative">
+            <label class="filters-form__choose-text" for="negative">Скорее отрицательное</label>
+            <input class="visually-hidden" type="radio" name="impression" value="difficult" id="difficult">
+            <label class="filters-form__choose-text" for="difficult">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-form__section">
+          <legend class="filters-form__title">посещенные<br>достопримечательности:</legend>
+          <div class="filters-form__wrapper">
+            <input class="visually-hidden" type="checkbox" name="attractions" value="bridge" id="bridge" checked>
+            <label class="filters-form__choose-text" for="bridge">Мост Дьявола</label>
+            <input class="visually-hidden" type="checkbox" name="attractions" value="mountain" id="mountain" checked>
+            <label class="filters-form__choose-text" for="mountain">Гора-Колокол</label>
+            <input class="visually-hidden" type="checkbox" name="attractions" value="park" id="park" checked>
+            <label class="filters-form__choose-text" for="park">Слайд-парк</label>
+            <input class="visually-hidden" type="checkbox" name="attractions" value="cliffs" id="cliffs">
+            <label class="filters-form__choose-text" for="cliffs">Красные скалы</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="filters-form__section">
+          <legend class="filters-form__title">Опишите свои эмоции:</legend>
+          <textarea class="filters-form__input" name="emotion" id="emotion" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="filters-form__button button" type="submit">Оставить отзыв</button>
+
+      </form>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__like-h1">#Vistisedona</p>
+      <section class="socials">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="socials__list">
+          <li class="socials__item"><a href="#" aria-label="Перейти в Твиттер">Твиттер</a></li>
+          <li class="socials__item"><a href="#" aria-label="Перейти в Фейсбук">Фейсбук</a></li>
+          <li class="socials__item"><a href="#" aria-label="Перейти в Ютуб">Ютуб</a></li>
+        </ul>
+      </section>
+      <div class="wrapper-copyright">
+        <p class="wrapper-copyright__text">Разработано</p>
+        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
+      </div>
+    </footer>
   </body>
 </html>
