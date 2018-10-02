@@ -99,20 +99,6 @@
         <button class="filters-form__button button" type="submit">Оставить отзыв</button>
 
       </form>
-
-      <section class="popup-warning popup-warning--position">
-        <h3 class="popup-warning__title">Что-то пошло не так!</h3>
-        <p class="popup-warning__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="popup-warning__button button" type="button">ок</button>
-      </section>
-
-      <section class="popup-sent popup-sent--position">
-        <h3 class="popup-sent">Ваш отзыв отправлен!</h3>
-        <div class="popup-sent__wrapper">
-          <button class="popup-sent__button button" type="button">Закрыть окно</button>
-        </div>
-      </section>
-
     </main>
 
     <footer class="page-footer">
@@ -130,5 +116,19 @@
         <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
       </div>
     </footer>
+
+    <section class="popup popup--position">
+        <h3 class="popup__title">Что-то пошло не так!</h3>
+        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup__button button" type="button">ок</button>
+      </section>
+
+      <section class="popup popup--position">
+        <h3 class="popup__titlet">Ваш отзыв отправлен!</h3>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="popup__wrapper">
+          <button class="popup__button popup__button--close button" type="button">Закрыть окно</button>
+        </div>
+      </section>
   </body>
 </html>
