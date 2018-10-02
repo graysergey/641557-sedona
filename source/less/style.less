@@ -16,4 +16,31 @@
 @import "video.less";
 @import "wrapper-copyright.less";
 
-body { background: lightblue; }
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2"),
+    url("../fonts/ptsans.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("../fonts/ptsansbold.woff2"),
+    url("../fonts/ptsansbold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: lightblue;
+}
