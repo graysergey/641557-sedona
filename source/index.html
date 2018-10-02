@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <ul class="page-header__list site-list">
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фото и Видео</a></li>
+          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">Html Academy</a></li>
+        </ul>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
+          </a>
+          <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">Открить список меню</button>
+        </div>
+      </nav>
+      <section class="greeting-banner">
+        <img class="greeting-banner__item-text" src="http://placehold.it/280x213" width="280" height="213" alt="Добро пожаловать в город Седона!">
+      </section>
+    </header>
 
+    <main class="page-main">
+      <section class="advantages">
+        <div class="title-wrapper">
+          <h1 class="title-wrapper__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h2 class="title-wrapper__subtitle">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</h2>
+        </div>
+        <ol class="advantages-list">
+          <li class="advantages-list__item advantages-list__item--blu-background">
+            <h3 class="advantages-list__like-h1">Настоящий городок</h3>
+            <p class="advantages-list__number">- №1 -</p>
+            <p class="advantages-list__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <img class="advantages-list__image" src="http://placehold.it/520x260" width="520" height="260" alt="городок">
+          </li>
+          <li class="advantages-list__item advantages-list__item--blu-background">
+            <h3 class="advantages-list__like-h1">Там есть мост дьявала</h3>
+            <p class="advantages-list__number">- №2 -</p>
+            <p class="advantages-list__text">Да, по нему можно пройтись! Если вы осмелитесь, конечно</p>
+            <img class="advantages-list__image" src="http://placehold.it/520x260" width="520" height="260" alt="городок">
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__like-h1">Небольшая прощадь</h3>
+            <p class="advantages-list__number">- №3 -</p>
+            <p class="advantages-list__text">Все интерестные места находятся очень близко</p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__like-h1">Красивая дорога</h3>
+            <p class="advantages-list__number">- №4 -</p>
+            <p class="advantages-list__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-list__item">
+            <h3 class="advantages-list__like-h1">Мало туристов</h3>
+            <p class="advantages-list__number">- №5 -</p>
+            <p class="advantages-list__text">Большинство идет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantages-list__item advantages-list__item--order">
+            <ul class="more-advantages">
+              <li class="more-advantages__item more-advantages__item--image-hous">
+                <h3 class="more-advantages__like-h1">Жилье</h3>
+                <p class="more-advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="more-advantages__item more-advantages__item--image-souvenirs">
+                <h3 class="more-advantages__like-h1">Сувениры</h3>
+                <p class="more-advantages__text">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="more-advantages__item more-advantages__item--image-food">
+                <h3 class="more-advantages__like-h1">Еда</h3>
+                <p class="more-advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section class="form-ofer">
+        <h2 class="visually-hidden">Форма поиска гостинницы в городе Седона</h2>
+        <p class="form-ofer__like-h1">Заинтерисовались?</p>
+        <p class="form-ofer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        <a class="form-ofer__button button" href="#" aria-label="Перейти на страницу с поиском гостинниц">Найти гостинницу</a>
+      </section>
+      <img class="map-image" src="http://placehold.it/150x100" width="320" height="350" alt="Город Седона на карте">
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__like-h1">#Vistisedona</p>
+      <section class="socials">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="socials__list">
+          <li class="socials__item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li class="socials__item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="socials__item"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+        </ul>
+      </section>
+      <div class="wrapper-copyright">
+        <p class="wrapper-copyright__text">Разработано</p>
+        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
+      </div>
+    </footer>
   </body>
 </html>
