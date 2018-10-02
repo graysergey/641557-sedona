@@ -18,12 +18,11 @@
           <a class="page-header__logo">
             <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
           </a>
-          <button class="page-header__button-menu" type="button">Открить список меню</button>
-          <button class="page-header__button-close page-header__button-close--absolut" type="button">Закрыть список меню</button>
+          <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">Открить список меню</button>
         </div>
       </nav>
       <section class="greeting-banner">
-        <img class="greeting-banner__item-text" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта" alt="Добро пожаловать в город Седона!">
+        <img class="greeting-banner__item-text" src="http://placehold.it/102x83" width="102" height="83" alt="Добро пожаловать в город Седона!">
       </section>
     </header>
 
@@ -33,22 +32,22 @@
         <h1 class="title-wripper__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h1>
       </div>
 
-      <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+      <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="filters-form__section">
           <legend class="filters-form__title">Представьтесь:</legend>
           <div class="filters-form__wrapper">
             <p>
               <label class="filters-form__title-label" for="username">Имя*:</label>
-              <input class="filters-form__title-input" type="text" name="username" value="Петр" id="username">
+              <input class="filters-form__title-input" type="text" name="username" placeholder="Петр" id="username">
             </p>
             <p>
               <label class="filters-form__title-label" for="surname">Фамилия*:</label>
-              <input class="filters-form__title-input" type="text" name="surname" value="Петр" id="surname">
+              <input class="filters-form__title-input" type="text" name="surname" placeholder="Петр" id="surname">
             </p>
             <p>
               <label class="filters-form__title-label" for="patronymic">Отчество:</label>
-              <input class="filters-form__title-input" type="text" name="patronymic" value="Петр" id="patronymic">
+              <input class="filters-form__title-input" type="text" name="patronymic" placeholder="Петр" id="patronymic">
             </p>
           </div>
         </fieldset>
@@ -58,11 +57,11 @@
           <div class="filters-form__wrapper">
             <p>
               <label class="filters-form__title-label" for="telephone">Контактный телефон*:</label>
-              <input class="filters-form__title-input" type="text" name="telephone" value="Введите телефон" id="telephone">
+              <input class="filters-form__title-input" type="tel" name="telephone" placeholder="Введите телефон" id="telephone" required>
             </p>
             <p>
               <label class="filters-form__title-label" for="email">Электронная почта*:</label>
-              <input class="filters-form__title-input" type="text" name="email" value="Введите e-mail" id="email">
+              <input class="filters-form__title-input" type="email" name="email" placeholder="Введите e-mail" id="email" required>
             </p>
           </div>
         </fieldset>
@@ -100,6 +99,20 @@
         <button class="filters-form__button button" type="submit">Оставить отзыв</button>
 
       </form>
+
+      <section class="popup-warning popup-warning--position">
+        <h3 class="popup-warning__title">Что-то пошло не так!</h3>
+        <p class="popup-warning__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="popup-warning__button button" type="button">ок</button>
+      </section>
+
+      <section class="popup-sent popup-sent--position">
+        <h3 class="popup-sent">Ваш отзыв отправлен!</h3>
+        <div class="popup-sent__wrapper">
+          <button class="popup-sent__button button" type="button">Закрыть окно</button>
+        </div>
+      </section>
+
     </main>
 
     <footer class="page-footer">
