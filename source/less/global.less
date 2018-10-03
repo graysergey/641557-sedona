@@ -5,17 +5,16 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-body {
+// Как правильно задать габариты сетки сайта?
+.page-body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #ffffff;
-}
-// Как правильно задать габариты сетки сайта?
-.page-body {
   max-width: 320px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+
   border: 1px dashed blue;
   margin: 0 auto;
 }
@@ -23,6 +22,6 @@ body {
 .layot-positioner {
   width: 100%;
   padding: 0 6.25%;
-  border: 1px dashed orange;
   background-color: rgb(215, 233, 250);
+  border: 1px dashed orange;
 }
