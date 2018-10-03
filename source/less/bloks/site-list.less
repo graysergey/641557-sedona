@@ -1,5 +1,39 @@
+@import "../variables.less";
+
 .site-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site-list__item a {
+  display: block;
+  padding: 16px;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: @blue;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+  &:active {
+    background-color: @blue-down;
+    color: lighten(@blue-down, 30%);
+  }
+}
+
+.site-list__item--active a {
+  background-color: @blue-down;
+  color: lighten(@blue-down, 30%);
+  &:hover {
+    background-color: @blue-down;
+    color: lighten(@blue-down, 30%);
+  }
 }
