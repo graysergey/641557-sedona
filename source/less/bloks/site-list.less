@@ -8,7 +8,7 @@
 
 .site-list__item a {
   display: block;
-  padding: 16px;
+  padding: 7px;
 
   font-size: 18px;
   line-height: 40px;
@@ -18,7 +18,10 @@
   color: #ffffff;
 
   background-color: @blue;
+  border-bottom: 1px solid darken(@blue, 20%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background-color: @blue-hover;
