@@ -2,4 +2,56 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: #ffffff;
 }
+
+.more-advantages__wrapper {
+  position: relative;
+  width: 100%;
+  padding-left: 21.875%;
+  padding-right: 12.5%;
+}
+
+.more-advantages__item--image-hous {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+
+    width: 37px;
+    height: 36px;
+    background-image: url("../../img/icon-house.svg");
+  }
+}
+
+.more-advantages__item--image-souvenirs {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+
+    width: 32px;
+    height: 37px;
+    background-image: url("../../img/icon-gift.svg");
+  }
+}
+
+.more-advantages__like-h1 {
+  margin: 0;
+  padding-top: 33px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.more-advantages__text {
+  margin: 0;
+}
+// Не срабатывает
+// .more-advantages__item:last-of-type {
+//   & more-advantages__text {
+//     margin-bottom: 100px;
+//   }
+// }

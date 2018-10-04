@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.advantages-list__item {
+  background-color: #eeeeee;
+}
+
 .advantages-list__item--blu-background:first-of-type {
   order: -2;
   background-image: url("../../img/bg-triangle.svg");
@@ -47,4 +51,15 @@
   margin: 0;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.layot-positioner--border {
+  width: 87.5%;
+  margin-left: 6.25%;
+  text-align: center;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.advantages-list__item:nth-last-child(2) .layot-positioner--border {
+  border: none;
 }
