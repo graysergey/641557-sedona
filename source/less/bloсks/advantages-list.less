@@ -11,6 +11,17 @@
   background-color: #eeeeee;
 }
 
+.advantages-list__like-h1 {
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+}
+
 .advantages-list__item--blu-background:first-of-type {
   order: -2;
   background-image: url("../../img/bg-triangle.svg");
@@ -28,16 +39,9 @@
 .advantages-list__item--blu-background {
   color: #ffffff;
   background-color: @blue;
-}
-
-.advantages-list__like-h1 {
-  margin: 0;
-  margin-top: 37px;
-  margin-bottom: 11px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-align: center;
+  & .advantages-list__like-h1 {
+    color: #ffffff;
+  }
 }
 
 .advantages-list__number {
