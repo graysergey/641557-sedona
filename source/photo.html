@@ -23,16 +23,16 @@
           <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">Открить список меню</button>
         </div>
       </nav>
-      <section class="greeting-banner">
-        <img class="greeting-banner__item-text" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в город Седона!">
+      <section class="greeting-banner greeting-banner--position">
+        <img class="greeting-banner__item-text greeting-banner__item-text--layout" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в город Седона!">
       </section>
     </header>
 
     <main class="page-main">
       <div class="title-wrapper">
         <div class="layot-positioner">
-          <h1 class="title-wrapper__title">Фото и видео</h1>
-          <h2 class="title-wrapper__subtitle title-wrapper__subtitle--padding">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
+          <h1 class="title-wrapper__title title-wrapper__title--position-photo">Фото и видео</h1>
+          <h2 class="title-wrapper__subtitle title-wrapper__subtitle--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
         </div>
       </div>
       <ul class="photo-list">
@@ -41,9 +41,7 @@
             <a><img class="photo-list__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография: Неродные просторы"></a>
             <p class="photo-list__title">Неродные просторы</p>
             <p class="photo-list__autor">Автор фото: Борис</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">1350</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">1350</span></button>
           </div>
         </li>
         <li class="photo-list__item">
@@ -51,9 +49,7 @@
             <a><img class="photo-list__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография: Местная растительность"></a>
             <p class="photo-list__title">Местная растительность</p>
             <p class="photo-list__autor">Автор фото: Сергей</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">143</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">143</span></button>
           </div>
         </li>
         <li class="photo-list__item">
@@ -61,9 +57,7 @@
             <a><img class="photo-list__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография: Дорога на север"></a>
             <p class="photo-list__title">Дорога на север</p>
             <p class="photo-list__autor">Автор фото: Петр</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">96</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">96</span></button>
           </div>
         </li>
         <li class="photo-list__item">
@@ -71,17 +65,15 @@
             <a><img class="photo-list__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография: Мост дьявола"></a>
             <p class="photo-list__title">Мост дьявола</p>
             <p class="photo-list__autor">Автор фото: Антон</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">254</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">254</span></button>
           </div>
         </li>
       </ul>
       <section class="form-ofer">
         <div class="layot-positioner">
           <h2 class="visually-hidden">Видео нашего городка - Седона</h2>
-          <p class="form-ofer__like-h1">Все еще сомневаетесь?</p>
-          <p class="form-ofer__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="form-ofer__like-h1 form-ofer__like-h1--photo">Все еще сомневаетесь?</p>
+          <p class="form-ofer__text form-ofer__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video">
           <img class="video__image" src="img/video-mobile@1x.jpg" width="320" height="200" alt="Видео нашего городка">
@@ -101,13 +93,13 @@
 
     <footer class="page-footer">
       <div class="layot-positioner">
-        <p class="page-footer__like-h1">#Vistisedona</p>
-        <section class="socials">
+        <p class="page-footer__like-h1">#Visitsedona</p>
+        <section class="socials socials--indent">
           <h3 class="visually-hidden">Мы в социальных сетях</h3>
           <ul class="socials__list">
-            <li class="socials__item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
-            <li class="socials__item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="socials__item"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+            <li class="socials__item socials__item--twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li class="socials__item socials__item--facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="socials__item socials__item--youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
           </ul>
         </section>
         <div class="wrapper-copyright">
