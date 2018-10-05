@@ -1,5 +1,39 @@
 .socials__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.socials__item {
+  display: flex;
+  width: 47px;
+  height: 47px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  background-color: @blue;
+}
+
+.socials__item--twitter {
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.socials__item--facebook {
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.socials__item--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.socials--indent {
+  margin-bottom: 34px;
 }
