@@ -13,8 +13,8 @@
 
 .advantages-list__like-h1 {
   margin: 0;
-  margin-top: 37px;
-  margin-bottom: 11px;
+  margin-top: 27px;
+  margin-bottom: 9px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -24,12 +24,10 @@
 
 .advantages-list__item--blu-background:first-of-type {
   order: -2;
+  padding-top: 40px;
   background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: center top;
-  & .advantages-list__like-h1 {
-    margin-top: 76px;
-  }
 }
 
 .advantages-list__item--order {
@@ -41,7 +39,15 @@
   background-color: @blue;
 
   & .advantages-list__like-h1 {
+    margin-top: 37px;
+    margin-bottom: 11px;
     color: #ffffff;
+  }
+
+  & .advantages-list__text {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
   }
 }
 
@@ -53,18 +59,26 @@
 
 .advantages-list__text {
   margin: 0;
+  margin-bottom: 28px;
+  padding-right:;
+  padding-left:;
   text-align: center;
-  margin-bottom: 40px;
 }
 
-.layot-positioner--border {
+.advantages-list__text--layout {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.advantages-list__border {
   width: 87.5%;
+  margin-right: 6.25%;
   margin-left: 6.25%;
   text-align: center;
   border-bottom: 1px solid #d6d6d6;
 }
 
-.advantages-list__item:nth-last-child(2) .layot-positioner--border {
+.advantages-list__item:nth-last-child(2) .advantages-list__border {
   border: none;
 }
 
