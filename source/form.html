@@ -39,76 +39,66 @@
       <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="filters-form__section">
-          <div class="layot-positioner">
-            <legend class="filters-form__title">Представьтесь:</legend>
-            <div class="filters-form__wrapper">
-              <p>
-                <label class="filters-form__title-label" for="username">Имя*:</label>
-                <input class="filters-form__title-input" type="text" name="username" placeholder="Петр" id="username">
-              </p>
-              <p>
-                <label class="filters-form__title-label" for="surname">Фамилия*:</label>
-                <input class="filters-form__title-input" type="text" name="surname" placeholder="Петр" id="surname">
-              </p>
-              <p>
-                <label class="filters-form__title-label" for="patronymic">Отчество:</label>
-                <input class="filters-form__title-input" type="text" name="patronymic" placeholder="Петр" id="patronymic">
-              </p>
-            </div>
+          <legend class="filters-form__title">Представьтесь:</legend>
+          <div class="filters-form__wrapper">
+            <p>
+              <label class="filters-form__title-label" for="username">Имя*:</label>
+              <input class="filters-form__title-input" type="text" name="username" placeholder="Петр" id="username">
+            </p>
+            <p>
+              <label class="filters-form__title-label" for="surname">Фамилия*:</label>
+              <input class="filters-form__title-input" type="text" name="surname" placeholder="Петр" id="surname">
+            </p>
+            <p>
+              <label class="filters-form__title-label" for="patronymic">Отчество:</label>
+              <input class="filters-form__title-input" type="text" name="patronymic" placeholder="Петр" id="patronymic">
+            </p>
           </div>
         </fieldset>
 
         <fieldset class="filters-form__section">
-          <div class="layot-positioner">
-            <legend class="filters-form__title">Контактная информация:</legend>
-            <div class="filters-form__wrapper">
-              <p>
-                <label class="filters-form__title-label" for="telephone">Контактный телефон*:</label>
-                <input class="filters-form__title-input" type="tel" name="telephone" placeholder="Введите телефон" id="telephone" required>
-              </p>
-              <p>
-                <label class="filters-form__title-label" for="email">Электронная почта*:</label>
-                <input class="filters-form__title-input" type="email" name="email" placeholder="Введите e-mail" id="email" required>
-              </p>
-            </div>
+          <legend class="filters-form__title">Контактная информация:</legend>
+          <div class="filters-form__wrapper">
+            <p>
+              <label class="filters-form__title-label" for="telephone">Контактный телефон*:</label>
+              <input class="filters-form__title-input" type="tel" name="telephone" placeholder="Введите телефон" id="telephone" required>
+            </p>
+            <p>
+              <label class="filters-form__title-label" for="email">Электронная почта*:</label>
+              <input class="filters-form__title-input" type="email" name="email" placeholder="Введите e-mail" id="email" required>
+            </p>
           </div>
         </fieldset>
 
         <fieldset class="filters-form__section">
-          <div class="layot-positioner">
-            <legend class="filters-form__title">Ваше общее впечатление:</legend>
-            <div class="filters-form__wrapper">
-              <input class="visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
-              <label class="filters-form__choose-text" for="positive">Скорее положительное</label>
-              <input class="visually-hidden" type="radio" name="impression" value="negative" id="negative">
-              <label class="filters-form__choose-text" for="negative">Скорее отрицательное</label>
-              <input class="visually-hidden" type="radio" name="impression" value="difficult" id="difficult">
-              <label class="filters-form__choose-text" for="difficult">Затрудняюсь ответить</label>
-            </div>
+          <legend class="filters-form__title">Ваше общее впечатление:</legend>
+          <div class="filters-form__wrapper">
+            <input class="visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
+            <label class="filters-form__choose-text" for="positive">Скорее положительное</label>
+            <input class="visually-hidden" type="radio" name="impression" value="negative" id="negative">
+            <label class="filters-form__choose-text" for="negative">Скорее отрицательное</label>
+            <input class="visually-hidden" type="radio" name="impression" value="difficult" id="difficult">
+            <label class="filters-form__choose-text" for="difficult">Затрудняюсь ответить</label>
           </div>
         </fieldset>
 
         <fieldset class="filters-form__section">
-          <div class="layot-positioner">
-            <legend class="filters-form__title">Посещенные<br>достопримечательности:</legend>
-            <div class="filters-form__wrapper">
-              <input class="visually-hidden" type="checkbox" name="attractions" value="bridge" id="bridge" checked>
-              <label class="filters-form__choose-text" for="bridge">Мост Дьявола</label>
-              <input class="visually-hidden" type="checkbox" name="attractions" value="mountain" id="mountain" checked>
-              <label class="filters-form__choose-text" for="mountain">Гора-Колокол</label>
-              <input class="visually-hidden" type="checkbox" name="attractions" value="park" id="park" checked>
-              <label class="filters-form__choose-text" for="park">Слайд-парк</label>
-              <input class="visually-hidden" type="checkbox" name="attractions" value="cliffs" id="cliffs">
-              <label class="filters-form__choose-text" for="cliffs">Красные скалы</label>
-            </div>
+          <legend class="filters-form__title">Посещенные<br>достопримечательности:</legend>
+          <div class="filters-form__wrapper">
+            <input class="visually-hidden" type="checkbox" name="attractions" value="bridge" id="bridge" checked>
+            <label class="filters-form__choose-text" for="bridge">Мост Дьявола</label>
+            <input class="visually-hidden" type="checkbox" name="attractions" value="mountain" id="mountain" checked>
+            <label class="filters-form__choose-text" for="mountain">Гора-Колокол</label>
+            <input class="visually-hidden" type="checkbox" name="attractions" value="park" id="park" checked>
+            <label class="filters-form__choose-text" for="park">Слайд-парк</label>
+            <input class="visually-hidden" type="checkbox" name="attractions" value="cliffs" id="cliffs">
+            <label class="filters-form__choose-text" for="cliffs">Красные скалы</label>
           </div>
         </fieldset>
 
         <fieldset class="filters-form__section">
-          <div class="layot-positioner">
-            <legend class="filters-form__title">Опишите свои эмоции:</legend>
-            <textarea class="filters-form__input" name="emotion" id="emotion" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
-          </div>
+          <legend class="filters-form__title">Опишите свои эмоции:</legend>
+          <textarea class="filters-form__input" name="emotion" id="emotion" cols="25" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="layot-positioner">
           <button class="filters-form__button button" type="submit">Оставить отзыв</button>
