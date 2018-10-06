@@ -1,14 +1,72 @@
 .filters-form__section {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5px;
   border: none;
-  border-top: 1px solid #e5e5e5;
+  // border-bottom: 1px solid #e5e5e5;
 }
 
 .filters-form__title {
   display: inline-block;
+
+  width: 320px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.filters-form__wrapper {
+  width: 100%;
+  padding: 0 6.25%;
+}
+
+.filters-form__paragraph {
+  margin: 0;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.filters-form__title-input {
+  flex-grow: 1;
+
+  width: 100%;
+  padding-top: 16px;
+  padding-right: 22px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  border: none;
+  background-color: #f2f2f2;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:focus {
+    background-color: #ffffff;
+    outline-color: #e5e5e5;
+  }
+  // &[placeholder] {
+  //   color: #000000;
+  // }
+}
+//Как правильно поменять цвет атрибуту тега? (в данном случае placeholder для инпут)
+.filters-form__title-label {
+  align-self: center;
+  padding-right: 14px;
+  line-height: 26px;
   text-transform: uppercase;
 }
