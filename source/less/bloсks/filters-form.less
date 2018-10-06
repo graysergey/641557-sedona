@@ -136,9 +136,11 @@
   position: absolute;
   top: 50%;
   left: -79px;
+
   margin-top: -29px;
   width: 56px;
   height: 56px;
+
   border-radius: 50%;
   background-color: #f2f2f2;
 }
@@ -149,9 +151,11 @@
   position: absolute;
   top: 50%;
   left: -62px;
+
   margin-top: -11px;
   width: 22px;
   height: 22px;
+
   border-radius: 50%;
   background-color: #333333;
 }
@@ -164,7 +168,58 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  width: 100%;
+  padding: 0 6.25%;
+  padding-top: 10px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
 }
+
+.filters-form__checkbox-item {
+  padding-left: 79px;
+  margin-bottom: 54px;
+}
+
+.filters-form__checkbox-item:last-of-type {
+  margin-bottom: 35px;
+}
+
+.filters-form__checkbox-item label {
+  position: relative;
+  cursor: pointer;
+}
+
+.filters-form__checkbox-item label::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -80px;
+
+  margin-top: -28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+
+}
+
+.filters-form__input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: -63px;
+
+  margin-top: -8px;
+  width: 24px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
