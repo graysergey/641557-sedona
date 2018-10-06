@@ -72,7 +72,7 @@
 
         <fieldset class="filters-form__section filters-form__section--position">
           <legend class="filters-form__title">Ваше общее впечатление:</legend>
-          <ul class="filters-form__wrapper-redio">
+          <ul class="filters-form__wrapper-radio">
             <li class="filters-form__radio-item">
               <input class="visually-hidden filters-form__input-radio" type="radio" name="impression" value="positive" id="positive" checked>
               <label for="positive">Скорее положительное</label>
@@ -90,16 +90,24 @@
 
         <fieldset class="filters-form__section">
           <legend class="filters-form__title">Посещенные<br>достопримечательности:</legend>
-          <div class="filters-form__wrapper">
-            <input class="visually-hidden" type="checkbox" name="attractions" value="bridge" id="bridge" checked>
-            <label class="filters-form__choose-text" for="bridge">Мост Дьявола</label>
-            <input class="visually-hidden" type="checkbox" name="attractions" value="mountain" id="mountain" checked>
-            <label class="filters-form__choose-text" for="mountain">Гора-Колокол</label>
-            <input class="visually-hidden" type="checkbox" name="attractions" value="park" id="park" checked>
-            <label class="filters-form__choose-text" for="park">Слайд-парк</label>
-            <input class="visually-hidden" type="checkbox" name="attractions" value="cliffs" id="cliffs">
-            <label class="filters-form__choose-text" for="cliffs">Красные скалы</label>
-          </div>
+          <ul class="filters-form__wrapper-checkbox">
+            <li>
+              <input class="visually-hidden" type="checkbox" name="attractions" value="bridge" id="bridge" checked>
+              <label class="filters-form__choose-text" for="bridge">Мост Дьявола</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="checkbox" name="attractions" value="mountain" id="mountain" checked>
+              <label class="filters-form__choose-text" for="mountain">Гора-Колокол</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="checkbox" name="attractions" value="park" id="park" checked>
+              <label class="filters-form__choose-text" for="park">Слайд-парк</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="checkbox" name="attractions" value="cliffs" id="cliffs">
+              <label class="filters-form__choose-text" for="cliffs">Красные скалы</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="filters-form__section">
