@@ -41,15 +41,15 @@
         <fieldset class="filters-form__section">
           <legend class="filters-form__title">Представьтесь:</legend>
           <div class="filters-form__wrapper">
-            <p class="filters-form__paragraph">
+            <p class="filters-form__paragraph-name">
               <label class="filters-form__title-label" for="username">Имя*:</label>
               <input class="filters-form__title-input" type="text" name="username" placeholder="Петр" id="username">
             </p>
-            <p class="filters-form__paragraph">
+            <p class="filters-form__paragraph-name">
               <label class="filters-form__title-label" for="surname">Фамилия*:</label>
               <input class="filters-form__title-input" type="text" name="surname" placeholder="Петр" id="surname">
             </p>
-            <p class="filters-form__paragraph">
+            <p class="filters-form__paragraph-name">
               <label class="filters-form__title-label" for="patronymic">Отчество:</label>
               <input class="filters-form__title-input" type="text" name="patronymic" placeholder="Петр" id="patronymic">
             </p>
@@ -59,27 +59,33 @@
         <fieldset class="filters-form__section">
           <legend class="filters-form__title">Контактная информация:</legend>
           <div class="filters-form__wrapper">
-            <p class="">
+            <p class="filters-form__paragraph-contacts">
               <label class="filters-form__title-label" for="telephone">Контактный телефон*:</label>
-              <input class="filters-form__title-input" type="tel" name="telephone" placeholder="Введите телефон" id="telephone" required>
+              <input class="filters-form__title-input filters-form__title-input--phone" type="tel" name="telephone" placeholder="Введите телефон" id="telephone" required>
             </p>
-            <p class="">
+            <p class="filters-form__paragraph-contacts">
               <label class="filters-form__title-label" for="email">Электронная почта*:</label>
-              <input class="filters-form__title-input" type="email" name="email" placeholder="Введите e-mail" id="email" required>
+              <input class="filters-form__title-input filters-form__title-input--mail" type="email" name="email" placeholder="Введите e-mail" id="email" required>
             </p>
           </div>
         </fieldset>
 
-        <fieldset class="filters-form__section">
+        <fieldset class="filters-form__section filters-form__section--position">
           <legend class="filters-form__title">Ваше общее впечатление:</legend>
-          <div class="filters-form__wrapper">
-            <input class="visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
-            <label class="filters-form__choose-text" for="positive">Скорее положительное</label>
-            <input class="visually-hidden" type="radio" name="impression" value="negative" id="negative">
-            <label class="filters-form__choose-text" for="negative">Скорее отрицательное</label>
-            <input class="visually-hidden" type="radio" name="impression" value="difficult" id="difficult">
-            <label class="filters-form__choose-text" for="difficult">Затрудняюсь ответить</label>
-          </div>
+          <ul class="filters-form__wrapper-redio">
+            <li class="filters-form__radio-item">
+              <input class="visually-hidden filters-form__input-radio" type="radio" name="impression" value="positive" id="positive" checked>
+              <label for="positive">Скорее положительное</label>
+            </li>
+            <li class="filters-form__radio-item">
+              <input class="visually-hidden filters-form__input-radio" type="radio" name="impression" value="negative" id="negative">
+              <label for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="filters-form__radio-item">
+              <input class="visually-hidden filters-form__input-radio" type="radio" name="impression" value="difficult" id="difficult">
+              <label for="difficult">Затрудняюсь ответить</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="filters-form__section">
