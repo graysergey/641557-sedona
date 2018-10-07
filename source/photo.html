@@ -75,11 +75,12 @@
           <p class="form-ofer__like-h1 form-ofer__like-h1--photo">Все еще сомневаетесь?</p>
           <p class="form-ofer__text form-ofer__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="video">
+        <fieldset class="video">
           <img class="video__image" src="img/video-mobile@1x.jpg" width="320" height="200" alt="Видео нашего городка">
-          <div class="video__range-wrapper layot-positioner">
+          <div class="video__range-filter layot-positioner">
             <div class="video__range-box">
-              <input class="video__range" type="range">
+              <div class="video__scale" type="range"></div>
+              <div class="video-toggle"></div>
             </div>
             <div class="video__controls-wrapper">
               <button class="video__replay" type="button" aria-label="Начать просмотр сначала"></button>
@@ -87,7 +88,7 @@
               <button class="video__full" type="button" aria-label="Развернуть видео на весь экран"></button>
             </div>
           </div>
-        </div>
+        </fieldset>
       </section>
     </main>
 
