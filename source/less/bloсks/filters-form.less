@@ -132,19 +132,27 @@
   cursor: pointer;
 }
 
-.filters-form__input-radio + label::before {
-  content: "";
+.filters-form__input-radio {
+  & + label::before {
+    content: "";
 
-  position: absolute;
-  top: 50%;
-  left: -79px;
+    position: absolute;
+    top: 50%;
+    left: -79px;
 
-  margin-top: -29px;
-  width: 56px;
-  height: 56px;
+    margin-top: -29px;
+    width: 56px;
+    height: 56px;
 
-  border-radius: 50%;
-  background-color: #f2f2f2;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+  &:hover + label::before {
+    background-color: #e5e5e5;
+  }
+  &:active + label::before {
+    background-color: #d5d5d5;
+  }
 }
 
 .filters-form__input-radio:checked + label::after {
@@ -184,6 +192,7 @@
 .filters-form__checkbox-item {
   padding-left: 79px;
   margin-bottom: 54px;
+  user-select: none;
 }
 
 .filters-form__checkbox-item:last-of-type {
@@ -195,34 +204,49 @@
   cursor: pointer;
 }
 
-.filters-form__checkbox-item label::before {
-  content: "";
+.filters-form__checkbox-item {
+  & label::before {
+    content: "";
 
-  position: absolute;
-  top: 50%;
-  left: -80px;
+    position: absolute;
+    top: 50%;
+    left: -80px;
 
-  margin-top: -28px;
-  width: 56px;
-  height: 56px;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-
+    margin-top: -28px;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  &:hover label::before {
+    background-color: #e5e5e5;
+  }
+  &:active label::before {
+    background-color: #d5d5d5;
+  }
+  &:active + label::after {
+    // не знаю как поменять с помощью стилей цвет svg галочки в чекбоксе
+  }
 }
 
-.filters-form__input-checkbox:checked + label::after {
-  content: "";
+.filters-form__input-checkbox {
+  &:checked + label::after {
+    content: "";
 
-  position: absolute;
-  top: 50%;
-  left: -63px;
+    position: absolute;
+    top: 50%;
+    left: -63px;
 
-  margin-top: -8px;
-  width: 24px;
-  height: 16px;
+    margin-top: -8px;
+    width: 24px;
+    height: 16px;
 
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+  // &:focus label::before {
+  //   background-color: #d5d5d5;
+  // }
 }
 
 .filters-form__title--wrapper {
@@ -262,4 +286,5 @@
   margin-bottom: 43px;
   font-family: inherit;
   text-transform: uppercase;
+  border: none;
 }
