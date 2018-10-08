@@ -15,7 +15,6 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -50,10 +49,12 @@
 
   border: none;
   background-color: #f2f2f2;
+
   &:hover {
     background-color: #e5e5e5;
     border: none;
   }
+
   &:focus {
     border: none;
     background-color: #ffffff;
@@ -63,7 +64,7 @@
   //   color: #000000;
   // }
 }
-//Как правильно поменять цвет атрибуту тега? (в данном случае для placeholder в инпут)
+
 .filters-form__title-label {
   align-self: center;
   justify-self: center;
@@ -75,11 +76,13 @@
 .filters-form__paragraph-contacts {
   position: relative;
   margin: 0;
+
   & .filters-form__title-label {
     display: inline-block;
     padding-left: 22px;
     margin-bottom: 7px;
   }
+
   & .filters-form__title-input {
     display: inline-block;
     margin-bottom: 13px;
@@ -87,25 +90,48 @@
   }
 }
 
-.filters-form__paragraph-contacts:last-of-type {
-  & .filters-form__title-input {
-    margin-bottom: 23px;
-  }
-}
-// не получается добавить в инпут картинку (правило ниже)
-.filters-form__title-input--phone::after {
+.filters-form__paragraph-contacts--icon-phone::after {
   content: "";
+
   position: absolute;
-  right: 100%;
+  right: 0%;
+  top: 50%;
+
+  margin-top: -19px;
   width: 58px;
   height: 58px;
+
   background-color: #e6e6e6;
-  z-index: 2;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+.filters-form__paragraph-contacts--icon-email::after {
+  content: "";
+
+  position: absolute;
+  right: 0%;
+  top: 50%;
+
+  margin-top: -19px;
+  width: 58px;
+  height: 58px;
+
+  background-color: #e6e6e6;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+.filters-form__section--contacts-padding {
+  padding-bottom: 15px;
 }
 
 .filters-form__wrapper-radio {
   margin: 0;
-  padding: 0;
   list-style: none;
 
   width: 100%;
@@ -124,12 +150,16 @@
   padding-left: 79px;
   margin-bottom: 44px;
   user-select: none;
-}
 
-.filters-form__radio-item label {
-  position: relative;
-  display: block;
-  cursor: pointer;
+  & label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  &:active label::after {
+    opacity: 0.3;
+  }
 }
 
 .filters-form__input-radio {
@@ -147,27 +177,33 @@
     border-radius: 50%;
     background-color: #f2f2f2;
   }
+
+  &:checked + label::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: -62px;
+
+    margin-top: -11px;
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    background-color: #333333;
+  }
+
   &:hover + label::before {
     background-color: #e5e5e5;
   }
+
   &:active + label::before {
     background-color: #d5d5d5;
   }
-}
 
-.filters-form__input-radio:checked + label::after {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: -62px;
-
-  margin-top: -11px;
-  width: 22px;
-  height: 22px;
-
-  border-radius: 50%;
-  background-color: #333333;
+  &:focus + label::before {
+    background-color: #d5d5d5;
+  }
 }
 
 .filters-form__section--position {
@@ -176,7 +212,6 @@
 
 .filters-form__wrapper-checkbox {
   margin: 0;
-  padding: 0;
   list-style: none;
 
   width: 100%;
@@ -193,18 +228,16 @@
   padding-left: 79px;
   margin-bottom: 54px;
   user-select: none;
-}
 
-.filters-form__checkbox-item:last-of-type {
-  margin-bottom: 35px;
-}
+  & label {
+    position: relative;
+    cursor: pointer;
+  }
 
-.filters-form__checkbox-item label {
-  position: relative;
-  cursor: pointer;
-}
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
 
-.filters-form__checkbox-item {
   & label::before {
     content: "";
 
@@ -218,14 +251,13 @@
     border-radius: 5px;
     background-color: #f2f2f2;
   }
+
   &:hover label::before {
     background-color: #e5e5e5;
   }
+
   &:active label::before {
     background-color: #d5d5d5;
-  }
-  &:active + label::after {
-    // не знаю как поменять с помощью стилей цвет svg галочки в чекбоксе
   }
 }
 
@@ -244,9 +276,14 @@
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
   }
-  // &:focus label::before {
-  //   background-color: #d5d5d5;
-  // }
+
+  &:focus + label::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active + label::after {
+    opacity: 0.3;
+  }
 }
 
 .filters-form__title--wrapper {
@@ -270,10 +307,12 @@
   // &[placeholder] {
   //   color: #000000;
   // } хотел изменить цвет текста по умолчанию
+
   &:hover {
     border: none;
     background-color: #e5e5e5;
   }
+
   &:focus {
     border: none;
     background-color: #ffffff;
@@ -282,8 +321,12 @@
 }
 
 .filters-form__button {
+  display: flex;
+  justify-content: center;
+
   margin-top: 38px;
   margin-bottom: 43px;
+
   font-family: inherit;
   text-transform: uppercase;
   border: none;

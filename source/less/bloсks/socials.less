@@ -2,22 +2,31 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .socials__item {
   display: flex;
-  width: 47px;
-  height: 47px;
+  width: 46px;
+  height: 48px;
   margin-right: 6px;
   margin-bottom: 6px;
+
   background-color: @blue;
   cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:hover {
     background-color: @blue-hover;
   }
+
   &:active {
     background-color: @blue-down;
     color: rgba(255, 255, 255, 0.3);
