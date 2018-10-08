@@ -49,11 +49,19 @@
 // ----- Начало планшетной стилизации -----
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
-    height: 0;
+    max-height: 0; //не могу скрыть этот блок, а если задать display: none, пропадет логотип который лежит внутри.
     margin-top: 0;
   }
 
   .page-header__logo {
     top: -56px;
+  }
+
+  .page-header__menu-toggle {
+    display: none;
+  }
+
+  .page-header__menu-toggle--close::after {
+    display: none;
   }
 }

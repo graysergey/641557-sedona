@@ -87,8 +87,40 @@
 // ----- Начало планшетной стилизации -----
 @media (min-width: @tablet-width) {
   .advantages-list__item--blu-background {
+    display: flex;
+    
     &:first-of-type {
       background-image: none;
     }
+  }
+
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages-list__item {
+    width: 33.3333333333%;
+  }
+
+  .advantages-list__item--blu-background {
+    width: 100%;
+  }
+
+  .advantages-list__item--order {
+    width: 100%;
+  }
+
+  .more-advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .more-advantages__item {
+    width: 33.3333333333%;
+  }
+
+  .advantages-list__border {
+    border: none;
   }
 }

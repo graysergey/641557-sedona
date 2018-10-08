@@ -50,3 +50,21 @@
 .title-wrapper__subtitle--form {
   margin-bottom: 17px;
 }
+// ----- Начало планшетной стилизации -----
+@media (min-width: @tablet-width) {
+  .title-wrapper {
+    border: 1px solid transparent;
+  }
+
+  .title-wrapper__title {
+    width: 100%;
+    padding-left: 14.75%; //минус паддинги layot-positioner 6.25%
+    padding-right: 14.75%;
+
+    font-size: 21px;
+  }
+
+  .title-wrapper__subtitle--main {
+    margin-bottom: 20px;
+  }
+}
