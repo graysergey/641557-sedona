@@ -43,20 +43,30 @@
   .site-list {
     display: flex;
     flex-wrap: wrap;
+
+    min-height: 56px;
+
     background: #ffffff;
   }
 
   .site-list__item {
     width: 20%;
+
     &:nth-of-type(4n+2) {
       margin-right: 20%;
     }
+
     a {
+      min-height: 56px;
+
+      margin: 0;
+
       font-size: 14px;
       line-height: 26px;
       color: #000000;
       background-color: #ffffff;
       box-shadow: none;
+      border: none;
     }
 
     &:last-of-type a {

@@ -46,3 +46,14 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+// ----- Начало планшетной стилизации -----
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    height: 0;
+    margin-top: 0;
+  }
+
+  .page-header__logo {
+    top: -56px;
+  }
+}
