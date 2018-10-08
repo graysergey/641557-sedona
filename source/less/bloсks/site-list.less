@@ -1,0 +1,40 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-transform: uppercase;
+
+  background-color: @blue;
+}
+
+.site-list__item a {
+  display: block;
+  margin-bottom: 1px;
+  padding: 7px 20px;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+
+  background-color: @blue;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  user-select: none;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.site-list__item:last-of-type a {
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.3);
+}

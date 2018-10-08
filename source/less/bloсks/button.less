@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  width: 280px;
+
+  padding: 16px 15px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: @blue;
+  border: none;
+
+  &:hover {
+    background-color: @blue-hover;
+  }
+
+  &:active {
+    background-color: @blue-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

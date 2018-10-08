@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
+  <body class="page-body page-body--inner">
     <header class="page-header">
       <nav class="page-header__nav">
         <ul class="page-header__list site-list">
@@ -16,95 +18,95 @@
         </ul>
         <div class="page-header__wrapper">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="http://placehold.it/102x83" width="102" height="83" alt="Логотип сайта">
-          </a><button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">Открить список меню</button>
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта">
+          </a>
+          <button class="page-header__menu-toggle page-header__menu-toggle--close" type="button">Открить список меню</button>
         </div>
       </nav>
-      <section class="greeting-banner">
-        <img class="greeting-banner__item-text" src="http://placehold.it/102x83" width="102" height="83" alt="Добро пожаловать в город Седона!">
+      <section class="greeting-banner greeting-banner--position">
+        <img class="greeting-banner__item-text greeting-banner__item-text--layout" src="img/text-sedona.svg" width="229" height="39" alt="Добро пожаловать в город Седона!">
       </section>
     </header>
 
     <main class="page-main">
       <div class="title-wrapper">
-         <h1 class="title-wrapper__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <h2 class="title-wrapper__subtitle">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</h2>
+        <div class="layot-positioner">
+          <h1 class="title-wrapper__title title-wrapper__title--photo">Фото и видео</h1>
+          <h2 class="title-wrapper__subtitle title-wrapper__subtitle--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</h2>
+        </div>
       </div>
       <ul class="photo-list">
         <li class="photo-list__item">
-          <div class="photo-list__wrapper-center">
-            <a><img src="http://placehold.it/280x280" width="280" height="280" alt="Фотография: Неродные просторы"></a>
+          <div class="photo-list__wrapper-center layot-positioner">
+            <a><img class="photo-list__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография: Неродные просторы"></a>
             <p class="photo-list__title">Неродные просторы</p>
             <p class="photo-list__autor">Автор фото: Борис</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">1350</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">1350</span></button>
           </div>
         </li>
         <li class="photo-list__item">
-          <div class="photo-list__wrapper">
-            <a><img src="http://placehold.it/280x280" width="280" height="280" alt="Фотография: Местная растительность"></a>
+          <div class="photo-list__wrapper layot-positioner">
+            <a><img class="photo-list__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография: Местная растительность"></a>
             <p class="photo-list__title">Местная растительность</p>
             <p class="photo-list__autor">Автор фото: Сергей</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">143</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">143</span></button>
           </div>
         </li>
         <li class="photo-list__item">
-          <div class="photo-list__wrapper">
-            <a><img src="http://placehold.it/280x280" width="280" height="280" alt="Фотография: Дорога на север"></a>
+          <div class="photo-list__wrapper layot-positioner">
+            <a><img class="photo-list__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография: Дорога на север"></a>
             <p class="photo-list__title">Дорога на север</p>
             <p class="photo-list__autor">Автор фото: Петр</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">96</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">96</span></button>
           </div>
         </li>
         <li class="photo-list__item">
-          <div class="photo-list__wrapper">
-            <a><img src="http://placehold.it/280x280" width="280" height="280" alt="Фотография: Мост дьявола"></a>
+          <div class="photo-list__wrapper layot-positioner">
+            <a><img class="photo-list__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография: Мост дьявола"></a>
             <p class="photo-list__title">Мост дьявола</p>
             <p class="photo-list__autor">Автор фото: Антон</p>
-            <p class="photo-list__wrapper-like">
-              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">254</span></button>
-            </p>
+            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">254</span></button>
           </div>
         </li>
       </ul>
       <section class="form-ofer">
-        <h2 class="visually-hidden">Видео нашего городка - Седона</h2>
-        <p class="form-ofer__like-h1">Все еще сомневаетесь?</p>
-        <p class="form-ofer__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video">
-          <img class="video__image" src="http://placehold.it/102x83" width="102" height="83" alt="Видео нашего городка">
-          <div class="video__range-wrapper">
+        <div class="layot-positioner">
+          <h2 class="visually-hidden">Видео нашего городка - Седона</h2>
+          <p class="form-ofer__like-h1 form-ofer__like-h1--photo">Все еще сомневаетесь?</p>
+          <p class="form-ofer__text form-ofer__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <section class="video">
+          <img class="video__image" src="img/video-mobile@1x.jpg" width="320" height="200" alt="Видео нашего городка">
+          <div class="video__range-filter layot-positioner">
             <div class="video__range-box">
-              <input class="video__range" type="range">
+              <div class="video__scale"></div>
+              <button class="video__toggle"></button>
             </div>
             <div class="video__controls-wrapper">
               <button class="video__replay" type="button" aria-label="Начать просмотр сначала"></button>
-              <button class="video__cc" type="button" aria-label="cc"></button>
-              <button class="video__full" type="button" aria-label="Развернуть видео на весь экран"></button>
+              <button class="video__subtitles" type="button" aria-label="cc"></button>
+              <button class="video__fullscreen" type="button" aria-label="Развернуть видео на весь экран"></button>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </main>
 
     <footer class="page-footer">
-      <p class="page-footer__like-h1">#Vistisedona</p>
-      <section class="socials">
-        <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <ul class="socials__list">
-          <li class="socials__item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
-          <li class="socials__item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="socials__item"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
-        </ul>
-      </section>
-      <div class="wrapper-copyright">
-        <p class="wrapper-copyright__text">Разработано</p>
-        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
+      <div class="layot-positioner">
+        <p class="page-footer__like-h1">#Visitsedona</p>
+        <section class="socials socials--indent">
+          <h3 class="visually-hidden">Мы в социальных сетях</h3>
+          <ul class="socials__list">
+            <li class="socials__item socials__item--twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li class="socials__item socials__item--facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="socials__item socials__item--youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+          </ul>
+        </section>
+        <div class="wrapper-copyright">
+          <p class="wrapper-copyright__text">Разработано</p>
+          <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
+        </div>
       </div>
     </footer>
   </body>
