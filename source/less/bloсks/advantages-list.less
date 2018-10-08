@@ -22,15 +22,6 @@
   color: #000000;
 }
 
-.advantages-list__item--blu-background:first-of-type {
-  order: -2;
-  margin-top: 5px;
-  padding-top: 40px;
-  background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 .advantages-list__item--order {
   order: -1;
 }
@@ -38,6 +29,15 @@
 .advantages-list__item--blu-background {
   color: #ffffff;
   background-color: @blue;
+
+  &:first-of-type {
+    order: -2;
+    margin-top: 5px;
+    padding-top: 40px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
 
   & .advantages-list__like-h1 {
     margin-top: 37px;
@@ -83,4 +83,12 @@
 
 .advantages-list__image {
   display: block;
+}
+// ----- Начало планшетной стилизации -----
+@media (min-width: @tablet-width) {
+  .advantages-list__item--blu-background {
+    &:first-of-type {
+      background-image: none;
+    }
+  }
 }
