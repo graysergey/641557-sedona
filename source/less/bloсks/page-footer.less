@@ -1,15 +1,20 @@
 .page-footer {
-  margin-bottom: 23px;
+  padding-bottom: 23px;
 
   text-transform: uppercase;
   color: #000000;
   border-top: 1px solid transparent;
 
   @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
     min-height: 120px;
     margin: 0 auto;
     padding: 0 7.7%;
+
+    background-color: lemonchiffon;
   }
 }
 
@@ -33,6 +38,7 @@
 
 @media (min-width: 768px) {
   .page-footer__wrapper {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     background-color: lemonchiffon;
