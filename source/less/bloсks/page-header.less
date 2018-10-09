@@ -3,6 +3,11 @@
 
   margin-top: -1px;
   min-height: 56px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    min-height: 0;
+  }
 }
 
 .page-header__logo {
@@ -10,6 +15,10 @@
   left: 50%;
   top: -1px;
   margin-left: -51px;
+
+  @media (min-width: 768px) {
+    top: -56px;
+  }
 }
 
 .page-header__menu-toggle {
@@ -27,6 +36,10 @@
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .page-header__menu-toggle--close::after {
@@ -45,23 +58,8 @@
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   cursor: pointer;
-}
-// ----- Начало планшетной стилизации -----
-@media (min-width: @tablet-width) {
-  .page-header__wrapper {
-    max-height: 0; //не могу скрыть этот блок, а если задать display: none, пропадет логотип который лежит внутри.
-    margin-top: 0;
-  }
 
-  .page-header__logo {
-    top: -56px;
-  }
-
-  .page-header__menu-toggle {
-    display: none;
-  }
-
-  .page-header__menu-toggle--close::after {
+  @media (min-width: 768px) {
     display: none;
   }
 }

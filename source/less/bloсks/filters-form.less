@@ -306,9 +306,11 @@
 
   border: none;
   background-color: #f2f2f2;
-  // &[placeholder] {
-  //   color: #000000;
-  // } хотел изменить цвет текста по умолчанию
+
+  &::placeholder {
+    opacity: 1;
+    color: #000000;
+  }
 
   &:hover {
     border: none;

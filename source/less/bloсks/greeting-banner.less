@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-position: center bottom,
     50% 0%;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"),
+    url("../img/bg-back-tablet@1x.jpg");
+  }
 }
 
 .greeting-banner__item-text {
@@ -24,11 +29,4 @@
 .greeting-banner--position {
   background-position: center bottom,
     50% 100%;
-}
-// ----- Начало планшетной стилизации -----
-@media (min-width: @tablet-width) {
-  .greeting-banner {
-    background-image: url("../img/bg-intro-triangle-tablet.svg"),
-    url("../img/bg-back-tablet@1x.jpg");
-  }
 }
