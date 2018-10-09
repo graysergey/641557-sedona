@@ -29,8 +29,22 @@
 
 .form-ofer__button {
   margin-bottom: 49px;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
-.form-ofer .layot-positioner {
-  text-transform: uppercase;
+.form-ofer {
+  & .layot-positioner {
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 768px) {
+    & .layot-positioner--768px {
+      width: 100%;
+      padding-left: 20.2%;
+      padding-right: 20.2%;
+    } //не знаю как сделать перенос текста в блоке (form ofer) для текста (form-ofer__text)
+  }
 }

@@ -4,6 +4,14 @@
   text-transform: uppercase;
   color: #000000;
   border-top: 1px solid transparent;
+
+  @media (min-width: 768px) {
+    & .layot-positioner {
+      display: flex;
+      justify-content: space-between;
+      background-color: lemonchiffon;
+    }
+  }
 }
 
 .page-footer__like-h1 {
@@ -17,4 +25,8 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
