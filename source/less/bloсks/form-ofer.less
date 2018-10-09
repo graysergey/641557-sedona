@@ -25,6 +25,16 @@
 
   line-height: 24px;
   text-align: center;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    & br {
+      display: inline;
+    }
+  }
 }
 
 .form-ofer__button {
