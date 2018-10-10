@@ -402,3 +402,13 @@
     margin-bottom: 60px;
   }
 }
+
+.filters-form__information {
+  display: none;
+  margin: 0;
+
+  @media (min-width: 768px) { //не понимаю от куда взялась высота блока 118px (если убрать float (высота 118px остается), и почему этот блок не уплыл на право? float: right;
+    display: block;
+    float: right;
+  }
+}
