@@ -12,6 +12,8 @@
   border: none;
 
   @media (min-width: 768px) {
+    border-top: 1px solid #dbdbdb;
+
     &:nth-of-type(2) {
       width: 100%;
     }
@@ -22,6 +24,7 @@
 
     &:nth-of-type(5) {
       width: 100%;
+      padding-bottom: 58px;
     }
   }
 }
@@ -43,7 +46,9 @@
   border-top: 1px solid #e5e5e5;
 
   @media (min-width: 768px) {
-    border-top: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    border:none;
   }
 }
 
@@ -264,8 +269,9 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 72%;
+    width: 100%;
     padding: 0;
+    padding-left: 14.6%;
   }
 }
 
@@ -304,6 +310,10 @@
   &:active label::before {
     background-color: #d5d5d5;
   }
+
+  @media (min-width: 768px) {
+    width: 260px;
+  }
 }
 
 .filters-form__input-checkbox {
@@ -336,6 +346,7 @@
 }
 
 .filters-form__textarea {
+  display: block;
   width: 87%;
   min-height: 160px;
   margin: 0 6.25%;
@@ -388,5 +399,6 @@
   @media (min-width: 768px) {
     width: 50%;
     margin: 0;
+    margin-bottom: 60px;
   }
 }
