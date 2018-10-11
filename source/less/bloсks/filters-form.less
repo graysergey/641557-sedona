@@ -1,7 +1,11 @@
-@media (min-width: 768px) {
-  .filters-form {
+.filters-form {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 10%;
   }
 }
 
@@ -26,6 +30,16 @@
     &:nth-of-type(5) {
       width: 100%;
       padding-bottom: 58px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-of-type(3) {
+      flex-grow: 1;
+    }
+
+    &:nth-of-type(1) {
+      flex-grow: 1;
     }
   }
 }
@@ -125,6 +139,12 @@
     margin-bottom: 13px;
     padding-right: 58px;
   }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 }
 
 .filters-form__paragraph-contacts--icon-phone::after {
@@ -163,8 +183,14 @@
   z-index: 1;
 }
 
-.filters-form__section--contacts-padding {
+.filters-form__section--contacts {
   padding-bottom: 15px;
+}
+
+.filters-form__wrapper--flex-desktop {
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .filters-form__wrapper-radio {
@@ -274,6 +300,11 @@
     padding: 0;
     padding-left: 14.6%;
   }
+
+  @media (min-width: 1200px) {
+    justify-content: space-between; //хотел раздвинуть их на ширину обертки, после схлопывания - (width: auto; для каждой li) на 352 строке этого файла. Не получилось. Если задам margin-right: auto; То в IE не сработает, останется так же как есть. Как тут быть?
+    padding: 0;
+  }
 }
 
 .filters-form__checkbox-item {
@@ -314,6 +345,10 @@
 
   @media (min-width: 768px) {
     width: 260px;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto; //схлопнуло все чекбоксы
   }
 }
 
