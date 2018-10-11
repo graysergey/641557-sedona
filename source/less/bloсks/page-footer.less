@@ -1,9 +1,23 @@
 .page-footer {
-  margin-bottom: 23px;
+  padding-bottom: 23px;
 
   text-transform: uppercase;
   color: #000000;
   border-top: 1px solid transparent;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 0 7.7%;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 10%;
+  }
 }
 
 .page-footer__like-h1 {
@@ -17,4 +31,9 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    align-self: center;
+  }
 }

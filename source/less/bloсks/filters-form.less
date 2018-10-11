@@ -1,8 +1,47 @@
+.filters-form {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 10%;
+  }
+}
+
 .filters-form__section {
   margin: 0;
   padding: 0;
   padding-bottom: 5px;
   border: none;
+
+  @media (min-width: 768px) {
+    border-top: 1px solid #dbdbdb;
+
+    &:nth-of-type(2) {
+      width: 100%;
+    }
+
+    &:nth-of-type(3) {
+      order: -1;
+      border-right: 1 px solid #dbdbdb; //не могу понять, что перекрывает бордер ( не видно) Так же не видно в верхних двух fildset верхней рамки - заданой глобально для всех fieldset.
+    }
+
+    &:nth-of-type(5) {
+      width: 100%;
+      padding-bottom: 58px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-of-type(3) {
+      flex-grow: 1;
+    }
+
+    &:nth-of-type(1) {
+      flex-grow: 1;
+    }
+  }
 }
 
 .filters-form__title {
@@ -20,11 +59,21 @@
   text-transform: uppercase;
 
   border-top: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    margin-left: 15%;
+    margin-right: 15%;
+    border: none;
+  }
 }
 
 .filters-form__wrapper {
   width: 100%;
   padding: 0 6.25%;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .filters-form__paragraph-name {
@@ -90,6 +139,12 @@
     margin-bottom: 13px;
     padding-right: 58px;
   }
+
+  @media (min-width: 1200px) {
+    width: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 }
 
 .filters-form__paragraph-contacts--icon-phone::after {
@@ -128,8 +183,14 @@
   z-index: 1;
 }
 
-.filters-form__section--contacts-padding {
+.filters-form__section--contacts {
   padding-bottom: 15px;
+}
+
+.filters-form__wrapper--flex-desktop {
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .filters-form__wrapper-radio {
@@ -144,6 +205,12 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .filters-form__radio-item {
@@ -224,6 +291,20 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 0;
+    padding-left: 14.6%;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: space-between; //хотел раздвинуть их на ширину обертки, после схлопывания - (width: auto; для каждой li) на 352 строке этого файла. Не получилось. Если задам margin-right: auto; То в IE не сработает, останется так же как есть. Как тут быть?
+    padding: 0;
+  }
 }
 
 .filters-form__checkbox-item {
@@ -261,6 +342,14 @@
   &:active label::before {
     background-color: #d5d5d5;
   }
+
+  @media (min-width: 768px) {
+    width: 260px;
+  }
+
+  @media (min-width: 1200px) {
+    width: auto; //схлопнуло все чекбоксы
+  }
 }
 
 .filters-form__input-checkbox {
@@ -293,6 +382,7 @@
 }
 
 .filters-form__textarea {
+  display: block;
   width: 87%;
   min-height: 160px;
   margin: 0 6.25%;
@@ -306,9 +396,11 @@
 
   border: none;
   background-color: #f2f2f2;
-  // &[placeholder] {
-  //   color: #000000;
-  // } хотел изменить цвет текста по умолчанию
+
+  &::placeholder {
+    opacity: 1;
+    color: #000000;
+  }
 
   &:hover {
     border: none;
@@ -320,6 +412,11 @@
     background-color: #ffffff;
     outline-color: #e5e5e5;
   }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .filters-form__button {
@@ -328,8 +425,26 @@
 
   margin-top: 38px;
   margin-bottom: 43px;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
 
   font-family: inherit;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}
+
+.filters-form__information {
+  display: none;
+  margin: 0;
+
+  @media (min-width: 768px) { //не понимаю от куда взялась высота блока 118px (если убрать float (высота 118px остается), и почему этот блок не уплыл на право? float: right;
+    display: block;
+    float: right;
+  }
 }

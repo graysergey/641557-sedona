@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 *,
@@ -11,6 +12,11 @@ html {
 .layot-positioner {
   width: 100%;
   padding: 0 6.25%;
+
+  @media (min-width: 768px) {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .visually-hidden {
@@ -24,4 +30,8 @@ html {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+a[href] {
+  cursor: pointer;
 }

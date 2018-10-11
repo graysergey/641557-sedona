@@ -3,6 +3,11 @@
   padding: 0;
   list-style: none;
   background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .more-advantages__wrapper {
@@ -51,10 +56,16 @@
   margin: 0;
 }
 
-.more-advantages__item:first-of-type {
-  padding-top: 7px;
-}
+.more-advantages__item {
+  &:first-of-type {
+    padding-top: 7px;
+  }
 
-.more-advantages__item:last-of-type {
-  padding-bottom: 37px;
+  &:last-of-type {
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: 768px) {
+    width: 33.3333333333%;
+  }
 }

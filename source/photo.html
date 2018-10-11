@@ -28,7 +28,7 @@
       </section>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--wrapper">
       <div class="title-wrapper">
         <div class="layot-positioner">
           <h1 class="title-wrapper__title title-wrapper__title--photo">Фото и видео</h1>
@@ -39,38 +39,46 @@
         <li class="photo-list__item">
           <div class="photo-list__wrapper-center layot-positioner">
             <a><img class="photo-list__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография: Неродные просторы"></a>
-            <p class="photo-list__title">Неродные просторы</p>
-            <p class="photo-list__autor">Автор фото: Борис</p>
-            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">1350</span></button>
+            <div class="photo-list__paragraph-wrapper">
+              <p class="photo-list__title">Неродные просторы</p>
+              <p class="photo-list__autor">Автор фото: Борис</p>
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">1350</span></button>
+            </div>
           </div>
         </li>
         <li class="photo-list__item">
           <div class="photo-list__wrapper layot-positioner">
             <a><img class="photo-list__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография: Местная растительность"></a>
-            <p class="photo-list__title">Местная растительность</p>
-            <p class="photo-list__autor">Автор фото: Сергей</p>
-            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">143</span></button>
+            <div class="photo-list__paragraph-wrapper">
+              <p class="photo-list__title">Местная растительность</p>
+              <p class="photo-list__autor">Автор фото: Сергей</p>
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">143</span></button>
+            </div>
           </div>
         </li>
         <li class="photo-list__item">
           <div class="photo-list__wrapper layot-positioner">
             <a><img class="photo-list__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография: Дорога на север"></a>
-            <p class="photo-list__title">Дорога на север</p>
-            <p class="photo-list__autor">Автор фото: Петр</p>
-            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">96</span></button>
+            <div class="photo-list__paragraph-wrapper">
+              <p class="photo-list__title">Дорога на север</p>
+              <p class="photo-list__autor">Автор фото: Петр</p>
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">96</span></button>
+            </div>
           </div>
         </li>
         <li class="photo-list__item">
           <div class="photo-list__wrapper layot-positioner">
             <a><img class="photo-list__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография: Мост дьявола"></a>
-            <p class="photo-list__title">Мост дьявола</p>
-            <p class="photo-list__autor">Автор фото: Антон</p>
-            <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">254</span></button>
+            <div class="photo-list__paragraph-wrapper">
+              <p class="photo-list__title">Мост дьявола</p>
+              <p class="photo-list__autor">Автор фото: Антон</p>
+              <button class="photo-list__button-like" type="button" aria-label="Поставить лайк"><span class="photo-list__number">254</span></button>
+            </div>
           </div>
         </li>
       </ul>
       <section class="form-ofer">
-        <div class="layot-positioner">
+        <div class="layot-positioner form-ofer__wrapper-photo">
           <h2 class="visually-hidden">Видео нашего городка - Седона</h2>
           <p class="form-ofer__like-h1 form-ofer__like-h1--photo">Все еще сомневаетесь?</p>
           <p class="form-ofer__text form-ofer__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
@@ -93,20 +101,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="layot-positioner">
-        <p class="page-footer__like-h1">#Visitsedona</p>
-        <section class="socials socials--indent">
-          <h3 class="visually-hidden">Мы в социальных сетях</h3>
-          <ul class="socials__list">
-            <li class="socials__item socials__item--twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
-            <li class="socials__item socials__item--facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="socials__item socials__item--youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
-          </ul>
-        </section>
-        <div class="wrapper-copyright">
-          <p class="wrapper-copyright__text">Разработано</p>
-          <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
-        </div>
+      <p class="page-footer__like-h1">#Visitsedona</p>
+      <section class="socials socials--indent">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="socials__list">
+          <li class="socials__item socials__item--twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li class="socials__item socials__item--facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="socials__item socials__item--youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+        </ul>
+      </section>
+      <div class="wrapper-copyright">
+        <p class="wrapper-copyright__text">Разработано</p>
+        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
       </div>
     </footer>
   </body>

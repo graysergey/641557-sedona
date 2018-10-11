@@ -28,7 +28,7 @@
       </section>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--wrapper">
       <div class="title-wrapper">
         <div class="layot-positioner">
           <p class="title-wrapper__title title-wrapper__title--form">Оставьте свой отзыв</p>
@@ -56,9 +56,9 @@
           </div>
         </fieldset>
 
-        <fieldset class="filters-form__section filters-form__section--contacts-padding">
+        <fieldset class="filters-form__section filters-form__section--contacts">
           <legend class="filters-form__title">Контактная информация:</legend>
-          <div class="filters-form__wrapper">
+          <div class="filters-form__wrapper filters-form__wrapper--flex-desktop">
             <p class="filters-form__paragraph-contacts filters-form__paragraph-contacts--icon-phone">
               <label class="filters-form__title-label" for="telephone">Контактный телефон*:</label>
               <input class="filters-form__title-input filters-form__title-input--phone" type="tel" name="telephone" placeholder="Введите телефон" id="telephone" required>
@@ -114,28 +114,24 @@
           <legend class="filters-form__title filters-form__title--wrapper">Опишите свои эмоции:</legend>
           <textarea class="filters-form__textarea" name="emotion" id="emotion" cols="25" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <div class="layot-positioner ">
-          <button class="filters-form__button button" type="submit">Отправить отзыв</button>
-        </div>
-
+        <button class="filters-form__button button" type="submit">Отправить отзыв</button>
+        <p class="filters-form__information">* — обязательные поля</p>
       </form>
     </main>
 
     <footer class="page-footer">
-      <div class="layot-positioner">
-        <p class="page-footer__like-h1">#Visitsedona</p>
-        <section class="socials socials--indent">
-          <h3 class="visually-hidden">Мы в социальных сетях</h3>
-          <ul class="socials__list">
-            <li class="socials__item socials__item--twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
-            <li class="socials__item socials__item--facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li class="socials__item socials__item--youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
-          </ul>
-        </section>
-        <div class="wrapper-copyright">
-          <p class="wrapper-copyright__text">Разработано</p>
-          <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
-        </div>
+      <p class="page-footer__like-h1">#Visitsedona</p>
+      <section class="socials socials--indent">
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
+        <ul class="socials__list">
+          <li class="socials__item socials__item--twitter"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li class="socials__item socials__item--facebook"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li class="socials__item socials__item--youtube"><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
+        </ul>
+      </section>
+      <div class="wrapper-copyright">
+        <p class="wrapper-copyright__text">Разработано</p>
+        <a class="wrapper-copyright__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Перейти на страницу HTML Academy"></a>
       </div>
     </footer>
 
@@ -153,7 +149,7 @@
         <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&#160;ближайшее время мы опубликуем его на сайте.</p>
       </div>
       <div class="popup__wrapper">
-        <button class="popup__button-close button" type="button">Закрыть окно</button>
+        <button class="popup__button-feedback button" type="button">Закрыть окно</button>
       </div>
     </section>
   </body>
