@@ -15,6 +15,10 @@
 .advantages-list__item {
   background-color: #eeeeee;
 
+  &:nth-last-child(2) .advantages-list__border {
+    border: none;
+  }
+
   @media (min-width: 768px) {
     width: 33.3333333333%;
   }
@@ -103,10 +107,6 @@
   @media (min-width: 768px) {
     border: none;
   }
-}
-
-.advantages-list__item:nth-last-child(2) .advantages-list__border {
-  border: none;
 }
 
 .advantages-list__image {
