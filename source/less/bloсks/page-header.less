@@ -1,21 +1,33 @@
+.page-header__nav {
+  @media (min-width: 768px) {
+    position: relative;
+  }
+}
+
 .page-header__wrapper {
   position: relative;
 
+  margin-top: -1px;
   min-height: 56px;
 
   @media (min-width: 768px) {
-    min-height: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: auto;
+    height: 0;
   }
 }
 
 .page-header__logo {
-  position: absolute;
+  position: relative;
   left: 50%;
-  top: -1px;
+  top: 0;
   margin-left: -51px;
 
   @media (min-width: 768px) {
-    top: 0px;
+    position: relative;
+    left: 50%;
   }
 }
 
@@ -48,7 +60,7 @@
 
   width: 23px;
   height: 23px;
-  margin-top: -235px;
+  margin-top: -250px;
 
   font-size: 0;
   border: none;
