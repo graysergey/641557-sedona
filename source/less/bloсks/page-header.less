@@ -19,17 +19,36 @@
   }
 }
 
+.page-header__logo-image {
+  display: block;
+  width: 102px;
+  height: 83px;
+
+  @media (min-width: 1200px) {
+    width: 187px;
+    height: 96px;
+  }
+}
+
 .page-header__logo {
-  position: relative;
+  position: absolute;
   left: 50%;
   top: 0;
+
+  width: 102px;
   margin-left: -51px;
-// Пытался отцентровать логотип, может сделать его флекс елементом, и отцентровать с помошью флекса? Или почему у меня не получается?
+
   @media (min-width: 768px) {
+    display: block;
     left: 0;
     right: 0;
+
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 187px;
   }
 }
 
