@@ -7,3 +7,27 @@
     height: auto;
   }
 }
+
+.map-image__cursor {
+  @media (min-width: 768px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 88.5%;
+      left: 0;
+      right: 0;
+
+      display: block;
+      width: 27px;
+      height: 27px;
+      margin-left: auto;
+      margin-right: auto;
+
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      background-color: @blue;
+
+      z-index: 1;
+    }
+  }
+}
