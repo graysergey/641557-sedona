@@ -22,6 +22,11 @@
 
     text-align: center;
   }
+
+  @media (min-width: 1200px) {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 }
 
 .more-advantages__like-h1--image-hous {
@@ -66,6 +71,17 @@
 
 .more-advantages__text {
   margin: 0;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+
+    & br {
+      display: inline;
+    }
+  }
 }
 
 .more-advantages__item {
@@ -92,6 +108,14 @@
       padding-bottom: 61px;
       padding-left: 1%;
       padding-right: 1%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-of-type(3) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 82px;
     }
   }
 }
