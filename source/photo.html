@@ -42,7 +42,13 @@
       <ul class="photo-list">
         <li class="photo-list__item">
           <div class="photo-list__wrapper-center layot-positioner">
-            <a><img class="photo-list__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография: Неродные просторы"></a>
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография: Неродные просторы">
+              </picture>
+            </a>
             <div class="photo-list__paragraph-wrapper">
               <p class="photo-list__title">Неродные просторы</p>
               <p class="photo-list__autor">Автор фото: Борис</p>
@@ -52,7 +58,13 @@
         </li>
         <li class="photo-list__item">
           <div class="photo-list__wrapper layot-positioner">
-            <a><img class="photo-list__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография: Местная растительность"></a>
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография: Местная растительность">
+              </picture>
+            </a>
             <div class="photo-list__paragraph-wrapper">
               <p class="photo-list__title">Местная растительность</p>
               <p class="photo-list__autor">Автор фото: Сергей</p>
@@ -62,7 +74,13 @@
         </li>
         <li class="photo-list__item">
           <div class="photo-list__wrapper layot-positioner">
-            <a><img class="photo-list__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография: Дорога на север"></a>
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография: Дорога на север">
+              </picture>
+            </a>
             <div class="photo-list__paragraph-wrapper">
               <p class="photo-list__title">Дорога на север</p>
               <p class="photo-list__autor">Автор фото: Петр</p>
@@ -72,7 +90,13 @@
         </li>
         <li class="photo-list__item">
           <div class="photo-list__wrapper layot-positioner">
-            <a><img class="photo-list__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография: Мост дьявола"></a>
+            <a>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фотография: Мост дьявола">
+              </picture>
+            </a>
             <div class="photo-list__paragraph-wrapper">
               <p class="photo-list__title">Мост дьявола</p>
               <p class="photo-list__autor">Автор фото: Антон</p>
