@@ -2,6 +2,8 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   @media (min-width: 1200px) {
@@ -18,13 +20,32 @@
   @media (min-width: 768px) {
     border-top: 1px solid #dbdbdb;
 
+    &:nth-of-type(1) {
+      width: 265px;
+      border-top: none;
+
+      & .filters-form__title {
+        padding-bottom: 57px;
+        text-align: left;
+      }
+    }
+
     &:nth-of-type(2) {
       width: 100%;
     }
 
     &:nth-of-type(3) {
       order: -1;
-      border-right: 1 px solid #dbdbdb; //не могу понять, что перекрывает бордер ( не видно) Так же не видно в верхних двух fildset верхней рамки - заданой глобально для всех fieldset.
+
+      margin-right: 58px;
+      margin-bottom: 53px;
+      border-right: 1px solid #dbdbdb;
+      border-top: none;
+
+      & .filters-form__title {
+        padding-bottom: 73px;
+        text-align: left;
+      }
     }
 
     &:nth-of-type(5) {
@@ -40,6 +61,10 @@
 
     &:nth-of-type(1) {
       flex-grow: 1;
+    }
+
+    &:nth-of-type(4) {
+      width: 100%;
     }
   }
 }
@@ -61,8 +86,10 @@
   border-top: 1px solid #e5e5e5;
 
   @media (min-width: 768px) {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: auto;
+
+    font-size: 21px;
+
     border: none;
   }
 }
@@ -210,6 +237,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    padding-right: 63px;
   }
 }
 
@@ -228,6 +256,15 @@
 
   &:active label::after {
     opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 52px;
+    padding-left: 77px;
+
+    &:last-of-type {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -302,7 +339,7 @@
   }
 
   @media (min-width: 1200px) {
-    justify-content: space-between; //хотел раздвинуть их на ширину обертки, после схлопывания - (width: auto; для каждой li) на 352 строке этого файла. Не получилось. Если задам margin-right: auto; То в IE не сработает, останется так же как есть. Как тут быть?
+    justify-content: space-between;
     padding: 0;
   }
 }
@@ -348,7 +385,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: auto; //схлопнуло все чекбоксы
+    width: auto;
   }
 }
 
@@ -423,8 +460,8 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 38px;
-  margin-bottom: 43px;
+  margin-top: 45px;
+  margin-bottom: 37px;
   margin-left: 6.25%;
   margin-right: 6.25%;
 
@@ -443,8 +480,7 @@
   display: none;
   margin: 0;
 
-  @media (min-width: 768px) { //не понимаю от куда взялась высота блока 118px (если убрать float (высота 118px остается), и почему этот блок не уплыл на право? float: right;
+  @media (min-width: 768px) {
     display: block;
-    float: right;
   }
 }

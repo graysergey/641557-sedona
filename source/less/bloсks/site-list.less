@@ -8,6 +8,7 @@
   background-color: @blue;
 
   @media (min-width: 768px) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
 
@@ -34,6 +35,12 @@
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     user-select: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &:last-of-type a {

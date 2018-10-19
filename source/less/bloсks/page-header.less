@@ -1,3 +1,9 @@
+.page-header__nav {
+  @media (min-width: 768px) {
+    position: relative;
+  }
+}
+
 .page-header__wrapper {
   position: relative;
 
@@ -5,19 +11,44 @@
   min-height: 56px;
 
   @media (min-width: 768px) {
-    margin-top: 0;
-    min-height: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: auto;
+    height: 0;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  width: 102px;
+  height: 83px;
+
+  @media (min-width: 1200px) {
+    width: 187px;
+    height: 96px;
   }
 }
 
 .page-header__logo {
   position: absolute;
   left: 50%;
-  top: -1px;
+  top: 0;
+
+  width: 102px;
   margin-left: -51px;
 
   @media (min-width: 768px) {
-    top: -56px;
+    display: block;
+    left: 0;
+    right: 0;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 187px;
   }
 }
 
@@ -50,7 +81,7 @@
 
   width: 23px;
   height: 23px;
-  margin-top: -235px;
+  margin-top: -250px;
 
   font-size: 0;
   border: none;

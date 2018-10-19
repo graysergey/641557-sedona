@@ -4,6 +4,33 @@
 
   @media (min-width: 768px) {
     width: 100%;
-    height: 350px;
+    height: auto;
+  }
+}
+
+.map-image__cursor {
+  position: relative;
+
+  @media (min-width: 768px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+
+      display: block;
+      width: 27px;
+      height: 27px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -13px;
+
+      border-radius: 50%;
+      border: 5px solid #ffffff;
+      background-color: @blue;
+
+      z-index: 1;
+    }
   }
 }
