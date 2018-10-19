@@ -1,4 +1,4 @@
-.map-image {
+.map__image {
   display: block;
   background-color: #d4dcc6;
 
@@ -8,29 +8,27 @@
   }
 }
 
-.map-image__cursor {
+.map-wrapper {
   position: relative;
 
-  @media (min-width: 768px) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
 
-      display: block;
-      width: 27px;
-      height: 27px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: -13px;
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -13px;
 
-      border-radius: 50%;
-      border: 5px solid #ffffff;
-      background-color: @blue;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    background-color: @blue;
 
-      z-index: 1;
-    }
+    z-index: 1;
   }
 }

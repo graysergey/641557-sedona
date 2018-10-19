@@ -13,16 +13,13 @@
   display: flex;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
+  margin-right: 3px;
+  margin-left: 3px;
   margin-bottom: 3px;
   margin-top: 3px;
 
   background-color: @blue;
   cursor: pointer;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &:hover {
     background-color: @blue-hover;
@@ -57,6 +54,9 @@
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    margin-left: -10px;
+    padding-top: 32px;
+    padding-bottom: 33px;
   }
 }
 
