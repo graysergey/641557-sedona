@@ -8,6 +8,7 @@
 
   @media (min-width: 1200px) {
     padding: 0 10%;
+    padding-bottom: 7px;
   }
 }
 
@@ -82,8 +83,23 @@
   }
 
   @media (min-width: 1200px) {
+    &:nth-of-type(2) {
+      & .filters-form__title {
+        padding-bottom: 75px;
+      }
+    }
+
     &:nth-of-type(3) {
       flex-grow: 1;
+
+      width: 324px;
+      margin-left: 5px;
+      margin-right: 50px;
+      margin-bottom: 50px;
+
+      & .filters-form__title {
+        padding-left: 77px;
+      }
     }
 
     &:nth-of-type(1) {
@@ -92,6 +108,11 @@
 
     &:nth-of-type(4) {
       width: 100%;
+      padding-bottom: 3px;
+
+      & .filters-form__title {
+        margin-bottom: 36px;
+      }
     }
   }
 }
@@ -199,9 +220,22 @@
   }
 
   @media (min-width: 1200px) {
-    width: 50%;
+    display: flex;
     flex-grow: 1;
     flex-shrink: 1;
+    justify-content: flex-end;
+
+    &:first-of-type {
+      width: 401px;
+    }
+
+    & .filters-form__title-label {
+      padding-left: 0;
+    }
+
+    & .filters-form__title-input {
+      width: 315px;
+    }
   }
 }
 
@@ -221,6 +255,10 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 1;
+
+  @media (min-width: 1200px) {
+    margin-top: -35px;
+  }
 }
 
 .filters-form__paragraph-contacts--icon-email::after {
@@ -239,6 +277,10 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 1;
+
+  @media (min-width: 1200px) {
+    margin-top: -35px;
+  }
 }
 
 .filters-form__section--contacts {
@@ -248,6 +290,7 @@
 .filters-form__wrapper--flex-desktop {
   @media (min-width: 1200px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -269,6 +312,10 @@
     flex-direction: column;
     padding: 0;
     padding-right: 63px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 0;
   }
 }
 
@@ -414,7 +461,6 @@
   @media (min-width: 768px) {
     width: 260px;
     margin-bottom: 63px;
-
   }
 
   @media (min-width: 1200px) {
@@ -519,5 +565,11 @@
 
     line-height: 26px;
     text-transform: uppercase;
+  }
+}
+
+.filters-form__contacts {
+  @media (min-width: 1200px) {
+    display: none;
   }
 }
