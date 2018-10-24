@@ -9,6 +9,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -38,3 +39,9 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
+gulp.task("webp", function(){
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"));
+});
