@@ -30,15 +30,21 @@ gulp.task("css", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("build/css/**/*.css", gulp.series("css"));
-  gulp.watch("build/*.html").on("change", server.reload);
+  gulp.watch("source/less/**/*.less", gulp.series("css"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
+
+gulp.task("refresh", function(done) {
+  server.reload();
+  done();
 });
 
 gulp.task("images", function () {
