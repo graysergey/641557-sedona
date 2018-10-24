@@ -39,7 +39,8 @@ gulp.task("server", function () {
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
-  // gulp.watch("source/img/**/*.img", gulp.series("build", "refresh")); Хотел запустить слежку за добавлением или обновлением фотографий, и пересобрать проэкт не получилось;
+  // gulp.watch("source/img/**/*.img", gulp.series("clean-image", "copy-image", "refresh"));
+  // Хотел запустить слежку за добавлением или обновлением фотографий, обновить их в релизе и обновить страницу;
   gulp.watch("source/*.html", gulp.series("refresh"));
 });
 
@@ -95,6 +96,19 @@ gulp.task("copy", function () {
 
 gulp.task("clean", function () {
   return del("build");
+});
+
+gulp.task("clean-image", function () {
+  return del("build/img");
+});
+
+gulp.task("copy-image", function () {
+  return gulp.src([
+    "source/img/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", gulp.series(
