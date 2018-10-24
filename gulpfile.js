@@ -6,8 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var csso = recuire("gulp-csso");
-var rename = recuire("gulp-rename");
+var csso = require("gulp-csso");
+var rename = require("gulp-rename");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
