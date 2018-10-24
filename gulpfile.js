@@ -39,6 +39,7 @@ gulp.task("server", function () {
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
+  // gulp.watch("source/img/**/*.img", gulp.series("build", "refresh")); Хотел запустить слежку за добавлением или обновлением фотографий, и пересобрать проэкт не получилось;
   gulp.watch("source/*.html", gulp.series("refresh"));
 });
 
