@@ -39,10 +39,9 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
-  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "refresh"));
-  // gulp.watch("source/img/**/*.img", gulp.series("clean-image", "copy-image", "refresh"));
-  // Хотел запустить слежку за добавлением или обновлением фотографий, обновить их в релизе и обновить страницу;
-  gulp.watch("source/*.html", gulp.series("refresh"));
+  gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html_clean", "html_copy","refresh"));
+  gulp.watch("source/img/**/*.img", gulp.series("clean_image", "copy_image", "refresh"));
 });
 
 gulp.task("refresh", function(done) {
@@ -83,6 +82,19 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("html_clean", function () {
+  return del("build/*.html");
+});
+
+gulp.task("html_copy", function () {
+  return gulp.src([
+    "source/*.html"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -98,11 +110,11 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("clean-image", function () {
+gulp.task("clean_image", function () {
   return del("build/img");
 });
 
-gulp.task("copy-image", function () {
+gulp.task("copy_image", function () {
   return gulp.src([
     "source/img/**"
   ], {
