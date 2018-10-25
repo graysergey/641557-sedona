@@ -153,9 +153,15 @@
               <button class="video__toggle"></button>
             </div>
             <div class="video__controls-wrapper">
-              <button class="video__replay" type="button" aria-label="Начать просмотр сначала"></button>
-              <button class="video__subtitles" type="button" aria-label="cc"></button>
-              <button class="video__fullscreen" type="button" aria-label="Развернуть видео на весь экран"></button>
+              <button class="video__button video__button--replay" type="button" aria-label="Начать просмотр сначала">
+                <svg class="video__icon" width="16" height="20"><use xlink:href="#icon-video-replay"></use></svg>
+              </button>
+              <button class="video__button video__button--subtitles" type="button" aria-label="cc">
+                <svg class="video__icon" width="32" height="20"><use xlink:href="#icon-video-subtitles"></use></svg>
+              </button>
+              <button class="video__button video__button--fullscreen" type="button" aria-label="Развернуть видео на весь экран">
+                <svg class="video__icon" width="20" height="20"><use xlink:href="#icon-video-fullscreen"></use></svg>
+              </button>
             </div>
           </div>
         </section>
