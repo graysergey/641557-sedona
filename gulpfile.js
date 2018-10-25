@@ -13,6 +13,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var del  = require("del");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -86,8 +87,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.html"
+    "source/js/**"
   ], {
     base: "source"
   })
@@ -115,7 +115,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
-  "sprite"
+  "sprite",
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
