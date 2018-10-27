@@ -21,7 +21,7 @@
   @media (min-width: 768px) {
     border-top: 1px solid #dbdbdb;
 
-    & .filters-form__title {
+    .filters-form__title {
       padding-left: 60px;
       padding-right: 60px;
     }
@@ -30,7 +30,7 @@
       width: 265px;
       border-top: none;
 
-      & .filters-form__title {
+      .filters-form__title {
         padding-bottom: 57px;
         padding-left: 0;
         padding-right: 0;
@@ -42,7 +42,7 @@
     &:nth-of-type(2) {
       width: 100%;
 
-      & .filters-form__title {
+      .filters-form__title {
         padding-bottom: 24px;
       }
     }
@@ -55,7 +55,7 @@
       border-right: 1px solid #dbdbdb;
       border-top: none;
 
-      & .filters-form__title {
+      .filters-form__title {
         padding-bottom: 73px;
         padding-left: 0;
         padding-right: 0;
@@ -65,7 +65,7 @@
     }
 
     &:nth-of-type(4) {
-      & .filters-form__title {
+      .filters-form__title {
         width: 400px;
         padding-top: 15px;
         margin-bottom: 35px;
@@ -76,8 +76,10 @@
       width: 100%;
       padding-bottom: 58px;
 
-      & .filters-form__title {
+      .filters-form__title {
         padding-top: 16px;
+        padding-left: 75px;
+        padding-right: 75px;
         margin-bottom: 39px;
       }
     }
@@ -85,7 +87,7 @@
 
   @media (min-width: 1200px) {
     &:nth-of-type(2) {
-      & .filters-form__title {
+      .filters-form__title {
         margin-bottom: 50px;
       }
     }
@@ -98,7 +100,7 @@
       margin-right: 50px;
       margin-bottom: 50px;
 
-      & .filters-form__title {
+      .filters-form__title {
         padding-left: 77px;
       }
     }
@@ -112,7 +114,7 @@
       width: 100%;
       padding-bottom: 3px;
 
-      & .filters-form__title {
+      .filters-form__title {
         margin-bottom: 36px;
       }
     }
@@ -138,8 +140,6 @@
   @media (min-width: 768px) {
     display: block;
     width: auto;
-    margin-right: auto;
-    margin-left: auto;
 
     font-size: 21px;
 
@@ -208,13 +208,13 @@
   position: relative;
   margin: 0;
 
-  & .filters-form__title-label {
+  .filters-form__title-label {
     display: inline-block;
     padding-left: 22px;
     margin-bottom: 7px;
   }
 
-  & .filters-form__title-input {
+  .filters-form__title-input {
     display: inline-block;
     margin-bottom: 13px;
     padding-right: 58px;
@@ -234,11 +234,11 @@
       margin-right: 79px;
     }
 
-    & .filters-form__title-label {
+    .filters-form__title-label {
       padding-left: 0;
     }
 
-    & .filters-form__title-input {
+    .filters-form__title-input {
       width: 315px;
     }
   }
@@ -332,7 +332,7 @@
   margin-bottom: 44px;
   user-select: none;
 
-  & label {
+  label {
     position: relative;
     display: block;
     cursor: pointer;
@@ -433,7 +433,7 @@
   margin-bottom: 54px;
   user-select: none;
 
-  & label {
+  label {
     position: relative;
     cursor: pointer;
   }
@@ -442,7 +442,7 @@
     margin-bottom: 35px;
   }
 
-  & label::before {
+  label::before {
     content: "";
 
     position: absolute;
