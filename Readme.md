@@ -4,7 +4,7 @@
 * Наставник: [Ксения Торкова] (https://htmlacademy.ru/profile/id23249).
 
 ---
-### Project Sedona
+### Project Sedona (adaptive)
 ### Yushchenko Serhii
 
 ### You can see it here https://graysergey.github.io/Sedona
